@@ -7,36 +7,60 @@
   <title>figma</title>
   <link rel="stylesheet" href="/css/course.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
- <div class="containerr">
-   <header>
-    <nav>
-      <ul>
-        <a href="./index.html"><img src="./assets/logo.png" alt=""></a>
-        </h1>
-      </ul>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-      <div class="login-btn">
-        <button>Get consultation</button>
-        <i class="fa-regular fa-user"></i>
-        <h3 style="color: #424551;">Log in / Register</h3>
-      </div>
-    </nav>
-    <div class="content">
-      <h3 style="color: red;">course</h3>
+  <div class="containerr">
+   <section class="content">
+    <header>
+          <nav class="header__nav">
+            <a href="./index.html">
+              <img src="./assets/logo.png" alt="" />
+            </a>
+            <ul class="nav__links">
+              <li>
+                <a class="nav__links--link" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="./course.html">Courses</a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="./event.html">Events</a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__btns">
+            <button class="header__btns--btn">Get consultation</button>
+            <button class="btns__btn--second">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"
+                ></path>
+              </svg>
+              Log in / Register
+            </button>
+          </div>
+    </header>
+    <div class="content__text">
+      <h3>course</h3>
       <h1>User Experience. Principles of Human-Centered Design</h1>
     </div>
-  </header>
-  <div class="hero">
+   </section>
+  <section class="hero">
    <div class="hero__text">
      <div class="text">
       <h1>About the course</h1>
@@ -95,8 +119,8 @@
   </div>
 
   <button class="btn">Join</button>
-</div>
   </div>
+  </section>
 
 
 
