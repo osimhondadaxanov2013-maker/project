@@ -108,7 +108,7 @@ nav ul li a {
   align-items: flex-start;
   gap: 30px;
   transform: translate(+170px);
-  margin-top: -400px;
+  margin-bottom: 250px;
 }
 
 .text h1 {
@@ -130,7 +130,7 @@ nav ul li a {
   align-items: flex-start;
   padding-top: 310px;
   transform: translate(-430px);
-  gap: 20px;
+  gap: 4px;
 }
 
 .texts h1 {
