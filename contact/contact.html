@@ -1,48 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <h1>C R E A T E <span style="color: red;">><</span></h1>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <ul>
-
-                <div class="login-btn">
-                    <button class="btn">Get consultation</button>
-                    <i class="fa-regular fa-user"></i>
-                    <h3>Login in / Register</h3>
-                </div>
-        </nav>
-
-    
+      <nav class="header__nav">
+        <a href="./index/index.html">
+          <img src="./assets/logo.png" alt="" />
+        </a>
+        <ul class="nav__links">
+          <li>
+            <a class="nav__links--link" href="#">About Us</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="./course/course.html">Courses</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="./event/event.html">Events</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns">
+        <button class="header__btns--btn">Get consultation</button>
+        <button class="btns__btn--second">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+            <path
+              d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"
+            ></path>
+          </svg>
+          Log in / Register
+        </button>
+      </div>
     </header>
-
-
-</body>
+  </body>
 </html>
