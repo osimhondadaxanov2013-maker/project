@@ -339,3 +339,11 @@ header {
   height: 24;
   gap: 24px;
 }
+.banner__icon--icon {
+  color: #787a80;
+  width: 37px;
+  height: 60px;
+}
+.banner__icon--icon:hover {
+  color: #ff3f3a;
+}
