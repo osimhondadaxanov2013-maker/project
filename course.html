@@ -1,349 +1,432 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="data:image/png;base64,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"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CreateX</title>
+    <link href="/css/course.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <link
-    href="data:image/png;base64,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"
-    rel="shortcut icon" type="image/x-icon" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>CreateX</title>
-  <link href="/css/course.css" rel="stylesheet" />
-  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    referrerpolicy="no-referrer" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="containerr">
-    <section class="content">
-      <header>
-        <nav class="header__nav">
-          <a href="./index.html">
-            <img alt="" src="./assets/logo.png" />
-          </a>
-          <ul class="nav__links">
-            <li>
-              <a class="nav__links--link" href="#"> About Us </a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="./course.html"> Courses </a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="./event.html"> Events </a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="#"> Blog </a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="#"> Contacts </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__btns">
-          <button class="header__btns--btn">Get consultation</button>
-          <button class="btns__btn--second">
-            <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <body>
+    <div class="containerr">
+      <section class="content">
+        <header>
+          <nav class="header__nav">
+            <a href="./index.html">
+              <img alt="" src="./assets/logo.png" />
+            </a>
+            <ul class="nav__links">
+              <li>
+                <a class="nav__links--link" href="#"> About Us </a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="./course.html"> Courses </a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="./event.html"> Events </a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="#"> Blog </a>
+              </li>
+              <li>
+                <a class="nav__links--link" href="#"> Contacts </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__btns">
+            <button class="header__btns--btn">Get consultation</button>
+            <button class="btns__btn--second">
+              <svg
+                fill="currentColor"
+                height="24"
+                viewbox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"
+                ></path>
+              </svg>
+              Log in / Register
+            </button>
+          </div>
+        </header>
+        <div class="content__text">
+          <h3>course</h3>
+          <h1>User Experience. Principles of Human-Centered Design</h1>
+        </div>
+      </section>
+      <section class="hero">
+        <div class="hero__text">
+          <div class="text">
+            <h1>About the course</h1>
+            <p>
+              Bibendum vulputate adipiscing venenatis at est, a eu tincidunt.
+              Leo aenean congue in sagittis, felis maecenas amet varius at.
+              Pellentesque euismod in faucibus at elementum. Tellus maecenas
+              libero est tempus sit cras at malesuada diam. Consequat senectus
+              dictumst non hac dignissim montes, pretium, egestas molestie. Sed
+              magna aliquet ornare nibh vel lectus diam eget pretium. Lorem
+              risus nunc tincidunt tortor, mi nulla pellentesque
+            </p>
+          </div>
+          <div class="texts">
+            <h1>You will learn:</h1>
+            <div class="item">
+              <img alt="" src="/assets/check.png" />
+              <h2>A fermentum in morbi pretium aliquam adipiscing donec.</h2>
+            </div>
+            <div class="item">
+              <img alt="" src="/assets/check.png" />
+              <h2>Vulputate placerat amet pulvinar lorem nisl.</h2>
+            </div>
+            <div class="item">
+              <img alt="" src="/assets/check.png" />
+              <h2>Consequat feugiat habitant gravida quisque elit.</h2>
+            </div>
+            <div class="item">
+              <img alt="" src="/assets/check.png" />
+              <h2>Etiam duis lobortis in fames ultrices commodo nibh.</h2>
+            </div>
+            <div class="item">
+              <img alt="" src="/assets/check.png" />
+              <h2>
+                Fringilla in nec risus congue venenatis pretium posuere nec.
+              </h2>
+            </div>
+            <div class="item">
+              <img alt="" src="/assets/check.png" />
+              <h2>Cursus eu pretium, vulputate tempus quam massa sed at.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="input">
+          <div class="style">
+            <h2>Dates</h2>
+            <h1>Sept 7 – Nov 2</h1>
+            <p>Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+          </div>
+          <div class="style">
+            <h2>Duration</h2>
+            <h1>2 months – 8 lessons</h1>
+            <p>
+              Rhoncus pellentesque auctor auctor orci vulputate faucibus quis
+              ut.
+            </p>
+          </div>
+          <div class="style">
+            <h2>Price</h2>
+            <h1>$120 per month</h1>
+            <p>
+              Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris
+              quam ac elit tristique dis.
+            </p>
+          </div>
+          <button class="btn">Join</button>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner-img">
+          <img alt="" src="/assets/curator-image.png" />
+        </div>
+        <div class="banner-right">
+          <div class="banner-text">
+            <h2>Course curator</h2>
+            <h1>Cody Fisher</h1>
+            <p>Senior UX designer in IT Product Company</p>
+          </div>
+          <div class="banner-info">
+            <div class="info">
+              <img alt="" src="/assets/Star.png" />
+              <span> 4.9 rate </span>
+            </div>
+            <div class="info">
+              <img alt="" src="/assets/Play.png" />
+              <span> 4 courses </span>
+            </div>
+            <div class="info">
+              <img alt="" src="/assets/Profile.png" />
+              <span> 350 students </span>
+            </div>
+          </div>
+          <div class="banner-p">
+            <p>
+              Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
+              Tempus curabitur venenatis, vulputate venenatis fermentum ante.
+              Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus
+              sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem
+              vulputate molestie laoreet at massa sed pharetra. Ac commodo
+              platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam
+              vel aliquam tristique sollicitudin interdum quam.
+            </p>
+          </div>
+          <div class="banner-icon">
+            <svg
+              class="banner__icon--icon"
+              fill="currentColor"
+              height="24"
+              viewbox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
               <path
-                d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1">
-              </path>
+                d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z"
+              ></path>
             </svg>
-            Log in / Register
-          </button>
-        </div>
-      </header>
-      <div class="content__text">
-        <h3>course</h3>
-        <h1>User Experience. Principles of Human-Centered Design</h1>
-      </div>
-    </section>
-    <section class="hero">
-      <div class="hero__text">
-        <div class="text">
-          <h1>About the course</h1>
-          <p>
-            Bibendum vulputate adipiscing venenatis at est, a eu tincidunt.
-            Leo aenean congue in sagittis, felis maecenas amet varius at.
-            Pellentesque euismod in faucibus at elementum. Tellus maecenas
-            libero est tempus sit cras at malesuada diam. Consequat senectus
-            dictumst non hac dignissim montes, pretium, egestas molestie. Sed
-            magna aliquet ornare nibh vel lectus diam eget pretium. Lorem
-            risus nunc tincidunt tortor, mi nulla pellentesque
-          </p>
-        </div>
-        <div class="texts">
-          <h1>You will learn:</h1>
-          <div class="item">
-            <img alt="" src="/assets/check.png" />
-            <h2>A fermentum in morbi pretium aliquam adipiscing donec.</h2>
-          </div>
-          <div class="item">
-            <img alt="" src="/assets/check.png" />
-            <h2>Vulputate placerat amet pulvinar lorem nisl.</h2>
-          </div>
-          <div class="item">
-            <img alt="" src="/assets/check.png" />
-            <h2>Consequat feugiat habitant gravida quisque elit.</h2>
-          </div>
-          <div class="item">
-            <img alt="" src="/assets/check.png" />
-            <h2>Etiam duis lobortis in fames ultrices commodo nibh.</h2>
-          </div>
-          <div class="item">
-            <img alt="" src="/assets/check.png" />
-            <h2>
-              Fringilla in nec risus congue venenatis pretium posuere nec.
-            </h2>
-          </div>
-          <div class="item">
-            <img alt="" src="/assets/check.png" />
-            <h2>Cursus eu pretium, vulputate tempus quam massa sed at.</h2>
+            <svg
+              class="banner__icon--icon"
+              fill="currentColor"
+              height="24"
+              viewbox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+              <path
+                d="M7.803 5.731c.589 0 1.119.051 1.605.155q.723.155 1.243.508.515.352.804.939c.187.387.28.871.28 1.443q0 .93-.421 1.551-.423.622-1.256 1.015 1.134.33 1.69 1.146c.374.549.557 1.206.557 1.976q0 .937-.358 1.613a3.1 3.1 0 0 1-.974 1.114 4.3 4.3 0 0 1-1.399.64 6.3 6.3 0 0 1-1.609.206H2V5.731zm-.351 4.972q.72 0 1.192-.345c.312-.228.463-.604.463-1.119q0-.43-.151-.707a1.1 1.1 0 0 0-.417-.428 1.7 1.7 0 0 0-.597-.215 3.6 3.6 0 0 0-.697-.061H4.71v2.875zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798q-.001-.95-.533-1.358c-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893zm8.565-.041q.551.538 1.584.538.74 0 1.278-.373c.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693q-1.052 0-1.9-.337a4 4 0 0 1-1.439-.958 4.4 4.4 0 0 1-.905-1.485 5.4 5.4 0 0 1-.32-1.899q.001-1 .329-1.864a4.4 4.4 0 0 1 .934-1.493q.606-.63 1.444-.994a4.6 4.6 0 0 1 1.858-.362q1.13 0 1.979.44a4 4 0 0 1 1.39 1.182q.543.74.783 1.691.24.947.171 1.983h-6.431c.001.704.238 1.371.606 1.729m2.812-4.681c-.291-.322-.783-.496-1.385-.496q-.585-.001-.974.199a2 2 0 0 0-.62.491 1.8 1.8 0 0 0-.328.628 3 3 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409m-3.918-4.663h4.989v1.215h-4.989z"
+              ></path>
+            </svg>
+            <svg
+              class="banner__icon--icon"
+              fill="currentColor"
+              height="24"
+              viewbox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.04 4.04 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.03 4.03 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.02 4.02 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.46 11.46 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a8 8 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8 8 0 0 0 2.319-.624 8.7 8.7 0 0 1-2.019 2.083"
+              ></path>
+            </svg>
+            <svg
+              class="banner__icon--icon"
+              fill="currentColor"
+              height="24"
+              viewbox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+              <path
+                d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376m4.254 6.034v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z"
+              ></path>
+            </svg>
           </div>
         </div>
-      </div>
-      <div class="input">
-        <div class="style">
-          <h2>Dates</h2>
-          <h1>Sept 7 – Nov 2</h1>
-          <p>Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+      </section>
+      <section class="dots">
+        <div class="dots-text">
+          <h2>Main steps</h2>
+          <h1>Online learning process</h1>
         </div>
-        <div class="style">
-          <h2>Duration</h2>
-          <h1>2 months – 8 lessons</h1>
-          <p>
-            Rhoncus pellentesque auctor auctor orci vulputate faucibus quis
-            ut.
-          </p>
-        </div>
-        <div class="style">
-          <h2>Price</h2>
-          <h1>$120 per month</h1>
-          <p>
-            Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris
-            quam ac elit tristique dis.
-          </p>
-        </div>
-        <button class="btn">Join</button>
-      </div>
-    </section>
-    <section class="banner">
-      <div class="banner-img">
-        <img alt="" src="/assets/curator-image.png" />
-      </div>
-      <div class="banner-right">
-        <div class="banner-text">
-          <h2>Course curator</h2>
-          <h1>Cody Fisher</h1>
-          <p>Senior UX designer in IT Product Company</p>
-        </div>
-        <div class="banner-info">
-          <div class="info">
-            <img alt="" src="/assets/Star.png" />
-            <span> 4.9 rate </span>
+        <div class="dots-card">
+          <div class="dots-1">
+            <h1>01</h1>
+            <h2>Watching online video</h2>
+            <p>
+              Culpa nostrud commodo ea consequat <br />
+              aliquip reprehenderit. Veniam velit <br />
+              nostrud aliquip sunt.
+            </p>
           </div>
-          <div class="info">
-            <img alt="" src="/assets/Play.png" />
-            <span> 4 courses </span>
-          </div>
-          <div class="info">
-            <img alt="" src="/assets/Profile.png" />
-            <span> 350 students </span>
-          </div>
-        </div>
-        <div class="banner-p">
-          <p>
-            Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
-            Tempus curabitur venenatis, vulputate venenatis fermentum ante.
-            Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus
-            sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem
-            vulputate molestie laoreet at massa sed pharetra. Ac commodo
-            platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam
-            vel aliquam tristique sollicitudin interdum quam.
-          </p>
-        </div>
-        <div class="banner-icon">
-          <svg class="banner__icon--icon" fill="currentColor" height="24" viewbox="0 0 24 24" width="24"
-            xmlns="http://www.w3.org/2000/svg">
-            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-            <path
-              d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z">
-            </path>
-          </svg>
-          <svg class="banner__icon--icon" fill="currentColor" height="24" viewbox="0 0 24 24" width="24"
-            xmlns="http://www.w3.org/2000/svg">
-            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-            <path
-              d="M7.803 5.731c.589 0 1.119.051 1.605.155q.723.155 1.243.508.515.352.804.939c.187.387.28.871.28 1.443q0 .93-.421 1.551-.423.622-1.256 1.015 1.134.33 1.69 1.146c.374.549.557 1.206.557 1.976q0 .937-.358 1.613a3.1 3.1 0 0 1-.974 1.114 4.3 4.3 0 0 1-1.399.64 6.3 6.3 0 0 1-1.609.206H2V5.731zm-.351 4.972q.72 0 1.192-.345c.312-.228.463-.604.463-1.119q0-.43-.151-.707a1.1 1.1 0 0 0-.417-.428 1.7 1.7 0 0 0-.597-.215 3.6 3.6 0 0 0-.697-.061H4.71v2.875zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798q-.001-.95-.533-1.358c-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893zm8.565-.041q.551.538 1.584.538.74 0 1.278-.373c.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693q-1.052 0-1.9-.337a4 4 0 0 1-1.439-.958 4.4 4.4 0 0 1-.905-1.485 5.4 5.4 0 0 1-.32-1.899q.001-1 .329-1.864a4.4 4.4 0 0 1 .934-1.493q.606-.63 1.444-.994a4.6 4.6 0 0 1 1.858-.362q1.13 0 1.979.44a4 4 0 0 1 1.39 1.182q.543.74.783 1.691.24.947.171 1.983h-6.431c.001.704.238 1.371.606 1.729m2.812-4.681c-.291-.322-.783-.496-1.385-.496q-.585-.001-.974.199a2 2 0 0 0-.62.491 1.8 1.8 0 0 0-.328.628 3 3 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409m-3.918-4.663h4.989v1.215h-4.989z">
-            </path>
-          </svg>
-          <svg class="banner__icon--icon" fill="currentColor" height="24" viewbox="0 0 24 24" width="24"
-            xmlns="http://www.w3.org/2000/svg">
-            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-            <path
-              d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.04 4.04 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.03 4.03 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.02 4.02 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.46 11.46 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a8 8 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8 8 0 0 0 2.319-.624 8.7 8.7 0 0 1-2.019 2.083">
-            </path>
-          </svg>
-          <svg class="banner__icon--icon" fill="currentColor" height="24" viewbox="0 0 24 24" width="24"
-            xmlns="http://www.w3.org/2000/svg">
-            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-            <path
-              d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376m4.254 6.034v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z">
-            </path>
-          </svg>
-        </div>
-      </div>
-    </section>
-    <section class="dots">
-      <div class="dots-text">
-        <h2>Main steps</h2>
-        <h1>Online learning process</h1>
-      </div>
-      <div class="dots-card">
 
-        <div class="dots-1">
-          <h1>01</h1>
-          <h2>Watching online video </h2>
-          <p>Culpa nostrud commodo ea consequat <br> aliquip reprehenderit. Veniam velit <br> nostrud aliquip sunt.</p>
-        </div>
-
-        <div class="dots-1">
-          <h1>02</h1>
-          <h2>Passing test</h2>
-          <p>Anim reprehenderit sint voluptate <br> exercitation adipisicing laborum <br> adipisicing ea.
-          </p>
-        </div>
-
-        <div class="dots-1">
-          <h1>03</h1>
-          <h2>Curator’s feedback</h2>
-          <p>Adipisicing esse aliqua aliquip <br> qui amet. Aute eiusmod dolore <br> dolore deserunt</p>
-        </div>
-
-        <div class="dots-2">
-          <h1>04</h1>
-          <h2>Corrections if needed</h2>
-          <p>Sit veniam aute dolore nulla <br> sit culpa. Minim mollit volup <br> prodient ea </p>
-        </div>
-      </div>
-    </section>
-    <section class="storage">
-      <div class="storage-card">
-        <h2>For whom?</h2>
-        <h1>Who will benefit from <br> the course:</h1>
-      </div>
-      <div class="storage-check">
-        <div class="storage-check-check">
-          <img src="/assets/check.png" alt="">
-          <p>Specialists with more than 1 year of active work experience</p>
-        </div>
-        <div class="storage-check-check">
-          <img src="/assets/check.png" alt="">
-          <p>Mobile app designers who want to improve their skills in <br> solving business problems, creating and
-            testing
-            <br>
-            human-centered interfaces
-          </p>
-        </div>
-        <div class="storage-check-check">
-          <img src="/assets/check.png" alt="">
-          <p>Professional designers who want to feel more confident in UX</p>
-        </div>
-        <div class="storage-check-check">
-          <img src="/assets/check.png" alt="">
-          <p>Specialists who would like to structure their knowledge, fill in <br> the gaps</p>
-        </div>
-      </div>
-    </section>
-    <section class="lessons">
-      <div class="lessons-box">
-        <span>Course program</span>
-        <h1>What will you learn</h1>
-
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 1. </span>
-            <h3>Aliquet lectus urna viverra in odio.</h3>
+          <div class="dots-1">
+            <h1>02</h1>
+            <h2>Passing test</h2>
+            <p>
+              Anim reprehenderit sint voluptate <br />
+              exercitation adipisicing laborum <br />
+              adipisicing ea.
+            </p>
           </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec  enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 2</span>
-            <h3>Orci commodo, viverra orci mollis ut euismod.</h3>
-          </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 3.</span>
-            <h3>Sagittis vitae facilisi rutrum amet mauris quisque vel.</h3>
-          </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 4.</span>
-            <h3>In id dolor quis nunc, urna hendrerit pharetra.</h3>
-          </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 5.</span>
-            <h3>Est, ut tempus id rutrum facilisi.</h3>
-          </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 6.</span>
-            <h3>Amet nec in pellentesque.</h3>
-          </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 7.</span>
-            <h3>Massa vel arcu mauris, id vel rhoncus mattis quis.</h3>
-          </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-        <div class="lessons-card">
-          <div class="lessons-texts">
-            <span class="plus">+ Lesson 8.</span>
-            <h3>Neque, cursus sapien nullam id.</h3>
-          </div>
-          <p class="subtitle">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus
-            facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus
-            porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-        </div>
-      </div>
-      <div class="lessons-img">
-        <img src="/assets/illustration (1).png" alt="">
-      </div>
-    </section>
 
+          <div class="dots-1">
+            <h1>03</h1>
+            <h2>Curator’s feedback</h2>
+            <p>
+              Adipisicing esse aliqua aliquip <br />
+              qui amet. Aute eiusmod dolore <br />
+              dolore deserunt
+            </p>
+          </div>
 
+          <div class="dots-2">
+            <h1>04</h1>
+            <h2>Corrections if needed</h2>
+            <p>
+              Sit veniam aute dolore nulla <br />
+              sit culpa. Minim mollit volup <br />
+              prodient ea
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="storage">
+        <div class="storage-card">
+          <h2>For whom?</h2>
+          <h1>
+            Who will benefit from <br />
+            the course:
+          </h1>
+        </div>
+        <div class="storage-check">
+          <div class="storage-check-check">
+            <img src="/assets/check.png" alt="" />
+            <p>Specialists with more than 1 year of active work experience</p>
+          </div>
+          <div class="storage-check-check">
+            <img src="/assets/check.png" alt="" />
+            <p>
+              Mobile app designers who want to improve their skills in <br />
+              solving business problems, creating and testing
+              <br />
+              human-centered interfaces
+            </p>
+          </div>
+          <div class="storage-check-check">
+            <img src="/assets/check.png" alt="" />
+            <p>Professional designers who want to feel more confident in UX</p>
+          </div>
+          <div class="storage-check-check">
+            <img src="/assets/check.png" alt="" />
+            <p>
+              Specialists who would like to structure their knowledge, fill in
+              <br />
+              the gaps
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="lessons">
+        <div class="lessons-box">
+          <span>Course program</span>
+          <h1>What will you learn</h1>
 
-
-
-  </div>
-  <script src="/js/course.js"></script>
-</body>
-
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 1. </span>
+              <h3>Aliquet lectus urna viverra in odio.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 2</span>
+              <h3>Orci commodo, viverra orci mollis ut euismod.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 3.</span>
+              <h3>Sagittis vitae facilisi rutrum amet mauris quisque vel.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 4.</span>
+              <h3>In id dolor quis nunc, urna hendrerit pharetra.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 5.</span>
+              <h3>Est, ut tempus id rutrum facilisi.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 6.</span>
+              <h3>Amet nec in pellentesque.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 7.</span>
+              <h3>Massa vel arcu mauris, id vel rhoncus mattis quis.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+          <div class="lessons-card">
+            <div class="lessons-texts">
+              <span class="plus">+ Lesson 8.</span>
+              <h3>Neque, cursus sapien nullam id.</h3>
+            </div>
+            <p class="subtitle">
+              Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar
+              aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius
+              mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+              faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo
+              nunc orci vitae accumsan id.
+            </p>
+          </div>
+        </div>
+        <div class="lessons-img">
+          <img src="/assets/illustration (1).png" alt="" />
+        </div>
+      </section>
+    </div>
+    <script src="/js/course.js"></script>
+  </body>
 </html>
