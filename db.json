@@ -1,5 +1,52 @@
 {
-  "person": [
-    
+  "workers": [
+    {
+      "id": 1,
+      "img": "./assets/worker-1.png",
+      "job": "Marketing",
+      "title": "The Ultimate Google Ads Training Course",
+      "price": "$100",
+      "person": "by Jerome Bell"
+    },
+    {
+      "id": 2,
+      "img": "./assets/worker-2.png",
+      "job": "Management",
+      "title": "Prduct Management Fundamentals",
+      "price": "$480",
+      "person": "by Marvin McKinney"
+    },
+    {
+      "id": 3,
+      "img": "./assets/worker-3.png",
+      "job": "HR & Recruting",
+      "title": "HR  Management and Analytics",
+      "price": "$200",
+      "person": "by Leslie Alexander Li"
+    },
+    {
+      "id": 4,
+      "img": "./assets/worker-4.png",
+      "job": "Marketing",
+      "title": "Brand Management & PR Communications",
+      "price": "$530",
+      "person": "by Kristin Watson"
+    },
+    {
+      "id": 5,
+      "img": "./assets/worker-5.png",
+      "job": "Management",
+      "title": "Business Development Management",
+      "price": "$400",
+      "person": "by Dianne Russell"
+    },
+    {
+      "id": 6,
+      "img": "./assets/worker-6.png",
+      "job": "Design",
+      "title": "Graphic Design Basic",
+      "price": "$500",
+      "person": "by Guy Hawkins"
+    }
   ]
 }
