@@ -347,3 +347,278 @@ header {
 .banner__icon--icon:hover {
   color: #ff3f3a;
 }
+
+.dots {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 1230;
+  height: 347;
+  top: 2098px;
+  left: 345px;
+  opacity: 1;
+  padding-top: +100px;
+  font-family: "Lato", sans-serif;  
+}
+
+.dots-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: +60px;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-text h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1e212c;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-text h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #1e212c;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-card {
+  display: flex;
+  gap: 140px;
+  padding-top: +40px;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-1 {
+  width: 285;
+  height: 192;
+  top: 2250px;
+  left: 345px;
+  opacity: 1;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-1 h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #d7dadd;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-1 h1:hover {
+  color: red;
+}
+
+.dots-2 h1:hover {
+  color: red;
+}
+
+.dots-1 h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #1e212c;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-1 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #787a80;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-2 {
+  width: 285;
+  height: 192;
+  top: 2250px;
+  left: 1290px;
+  opacity: 1;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-2 h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #d7dadd;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-2 h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-family: "Lato", sans-serif;
+}
+
+.dots-2 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #787a80;
+  font-family: "Lato", sans-serif;
+}
+
+.storage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: +150px;
+  font-family: "Lato", sans-serif;
+}
+
+.storage-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translate(+120px);
+  font-family: "Lato", sans-serif;
+}
+
+.storage-card h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  font-family: "Lato", sans-serif;
+}
+
+.storage-card h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1e212c;
+  font-family: "Lato", sans-serif;
+}
+
+.storage-check {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-170px);
+  padding-top: +20px;
+  gap: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.storage-check-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.storage-check-check img {
+  width: 20;
+  height: 20;
+  opacity: 1;
+  margin-top: 6px;
+  font-family: "Lato", sans-serif;
+}
+
+.storage-check-check p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #424551;
+  font-family: "Lato", sans-serif;
+}
+
+.lessons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 130px 120px;
+  font-family: "Lato", sans-serif;
+}
+
+.lessons-box span {
+  width: 161;
+  height: 24;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  font-family: "Lato", sans-serif;
+}
+
+.lessons-box h1 {
+  width: 410;
+  height: 60;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1e212c;
+  margin-bottom: 40px;
+  font-family: "Lato", sans-serif;
+}
+
+.lessons-card {
+  width: 600;
+  height: 528;
+  top: 3679px;
+  left: 345px;
+  gap: 44px;
+  opacity: 1;
+  margin-bottom: 24px;
+  font-family: "Lato", sans-serif;
+}
+
+.lessons-card span {
+  width: 80;
+  height: 30;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ff3f3a;
+  font-family: "Lato", sans-serif;
+}
+
+.lessons-card p {
+  /* width: 560px;
+  height: 104px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #424551;
+  padding: 20px 1px;
+  font-family: "Lato", sans-serif; */
+  display: none;
+
+}
+
+.lessons-texts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
