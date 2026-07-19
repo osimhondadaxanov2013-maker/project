@@ -76,10 +76,10 @@ header {
 }
 .hero__text {
   width: 100%;
-  display: flex;
-  align-items: center;
   gap: 150px;
   padding: 0 0 0 200px;
+  display: flex;
+  align-items: center;
 }
 .box {
   display: flex;
@@ -157,12 +157,12 @@ header {
   gap: 66px;
   padding: 100px 200px;
 }
-.hero__bottom__box {
+.hero__bottom--box {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.hero__bottom__box h2 {
+.hero__bottom--box h2 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 46px;
@@ -171,7 +171,7 @@ header {
   text-align: center;
   color: #1e212c;
 }
-.hero__bottom__box p {
+.hero__bottom--box p {
   width: 100%;
   font-family: "Lato", sans-serif;
   color: #1e212c;
@@ -180,7 +180,7 @@ header {
   line-height: 160%;
   letter-spacing: 0%;
 }
-.hero__bottom__dots {
+.hero__bottom--dots {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -427,4 +427,10 @@ header {
   line-height: 160%;
   letter-spacing: 0%;
   color: #424551;
+}
+.crft{
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: 150px 100px 0 200px;
 }
