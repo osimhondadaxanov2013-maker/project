@@ -48,5 +48,31 @@
       "price": "$500",
       "person": "by Guy Hawkins"
     }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Dianne Russell",
+      "job": "Founder and CEO",
+      "img": "./assets/tea.png"
+    },
+    {
+      "id": 2,
+      "name": "Jerome Bell",
+      "job": "Founder and Program Director",
+      "img": "./assets/team-1.png"
+    },
+    {
+      "id": 3,
+      "name": "Kristin Watson",
+      "job": "Marketer, Curator of Marketing Course",
+      "img": "./assets/team-3.png"
+    },
+    {
+      "id": 4,
+      "name": "Marvin McKinney",
+      "job": "PM, Curator of Management Course",
+      "img": "./assets/team-04.png"
+    }
   ]
 }

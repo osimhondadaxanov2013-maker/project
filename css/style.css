@@ -607,7 +607,7 @@ header {
   color: #424551;
   margin-bottom: 32px;
 }
-.craft__text--box{
+.craft__text--box {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -616,4 +616,92 @@ header {
   width: 100%;
   height: 1570px;
   background-color: #f4f5f6;
+  padding: 166px 150px;
+}
+.team__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.header__text--span {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.header__text--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 0%;
+  color: #1e212c;
+}
+.team__header--next {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__next--box {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__next--box:hover {
+  background-color: #ff3f3a;
+  color: #fff;
+}
+#team__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.team__container--box {
+  width: 285px;
+  height: 416px;
+}
+.container__box--img2 {
+  width: 285px;
+  height: 340px;
+  background-color: #ffcf2d;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.box__img--img {
+  width: 245px;
+  height: 320px;
+}
+.container__box--name {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.container__box--job {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #787a80;
+}
+.team__container--box:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
 }
