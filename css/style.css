@@ -428,12 +428,6 @@ header {
   letter-spacing: 0%;
   color: #424551;
 }
-.crft {
-  width: 100%;
-  height: 620px;
-  display: flex;
-  padding: 150px 100px 0 200px;
-}
 .event {
   width: 100%;
   height: 900px;
@@ -579,4 +573,47 @@ header {
   letter-spacing: 0.5px;
   border-radius: 4px;
   cursor: pointer;
+}
+.crft {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  padding: 150px 100px 0 150px;
+}
+.crft__text--span {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.crft__text--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1e212c;
+  margin-bottom: 48px;
+}
+.crft__text--subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #424551;
+  margin-bottom: 32px;
+}
+.craft__text--box{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.team {
+  width: 100%;
+  height: 1570px;
+  background-color: #f4f5f6;
 }
