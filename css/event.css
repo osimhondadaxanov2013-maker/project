@@ -108,10 +108,14 @@ header {
 .events__inputs--sort {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 12px;
 }
-
+.events__inputs--sort select {
+  text-indent: 10px;
+}
+.events__inputs--themes select {
+  color: #424551;
+}
 .events__inputs--show {
   display: flex;
   align-items: center;
@@ -120,9 +124,9 @@ header {
 }
 
 .events__themes--subtitle {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   color: #424551;
 }
 
@@ -246,14 +250,16 @@ header {
 }
 
 .grid__date--date {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 48px;
   color: #ff3f3a;
 }
 
 .grid__date--span {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
   font-size: 20px;
   color: #1e212c;
@@ -298,6 +304,6 @@ header {
 }
 
 .grid__list--row:hover {
-  filter: drop-shadow(0 0 10px #9A9CA50A  );
-  background-color: #E5E8ED;
+  filter: drop-shadow(0 0 10px #9a9ca50a);
+  background-color: #e5e8ed;
 }

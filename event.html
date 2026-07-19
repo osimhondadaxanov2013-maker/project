@@ -1,120 +1,170 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreateX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="shortcut icon"
-    href="data:image/png;base64,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"
-    type="image/x-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CreateX</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/event.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/event.css" />
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <nav class="header__nav">
-        <a href="./index.html">
-          <img src="./assets/logo.png" alt="" />
-        </a>
-        <ul class="nav__links">
-          <li>
-            <a class="nav__links--link" href="#">About Us</a>
-          </li>
-          <li>
-            <a class="nav__links--link" href="./course.html">Courses</a>
-          </li>
-          <li>
-            <a class="nav__links--link" href="./event.html">Events</a>
-          </li>
-          <li>
-            <a class="nav__links--link" href="#">Blog</a>
-          </li>
-          <li>
-            <a class="nav__links--link" href="./contact.html">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__btns">
-        <button class="header__btns--btn">Get consultation</button>
-        <button class="btns__btn--second">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-            <path
-              d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1">
-            </path>
-          </svg>
-          Log in / Register
-        </button>
-      </div>
-    </header>
-    <main>
-      <section class="events">
-        <div class="events__top">
-          <span class="events__top--span">OUR EVENTS</span>
-          <h1 class="events__top--title">
-            Lectures, workshops & master-classes
-          </h1>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="header__nav">
+          <a href="./index.html">
+            <img src="./assets/logo.png" alt="" />
+          </a>
+          <ul class="nav__links">
+            <li>
+              <a class="nav__links--link" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="nav__links--link" href="./course.html">Courses</a>
+            </li>
+            <li>
+              <a class="nav__links--link" href="./event.html">Events</a>
+            </li>
+            <li>
+              <a class="nav__links--link" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="nav__links--link" href="./contact.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__btns">
+          <button class="header__btns--btn">Get consultation</button>
+          <button class="btns__btn--second">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+              <path
+                d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"
+              ></path>
+            </svg>
+            Log in / Register
+          </button>
         </div>
-        <div class="events__inputs">
-          <div class="events__inputs--themes">
-            <p class="events__themes--subtitle">Event category</p>
-            <select id="">
-              <option>all themes</option>
-            </select>
+      </header>
+      <main>
+        <section class="events">
+          <div class="events__top">
+            <span class="events__top--span">OUR EVENTS</span>
+            <h1 class="events__top--title">
+              Lectures, workshops & master-classes
+            </h1>
           </div>
-
-          <div class="events__inputs--sort">
-            <p class="events__sort--subtitle">Sort by</p>
-            <select id="">
-              <option>newest</option>
-            </select>
-          </div>
-
-          <div class="events__inputs--show">
-            <p class="events__show--subtitle">Show</p>
-            <input type="number" placeholder="9">
-            <span class="eventa__show--span">events per page</span>
-          </div>
-
-          <div class="events__inputs--search">
-            <input type="search" placeholder="Search event... ">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-
-          <div class="events__inputs--grid">
-            <button class="events__grid--table"><i class="fa-solid fa-table-cells-large"></i></button>
-            <button class="events__grid--list"><i class="fa-solid fa-list"></i></button>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="grid__list--row">
-            <div class="grid__row--date">
-              <p class="grid__date--date">05</p>
-              <span class="grid__date--span">
-                August
-                <p class="grid__span--time">11:00 – 14:00</p>
-              </span>
+          <div class="events__inputs">
+            <div class="events__inputs--themes">
+              <p class="events__themes--subtitle">Event category</p>
+              <select id="">
+                <option>all themes</option>
+              </select>
             </div>
-            <div class="grid__row--text">
+
+            <div class="events__inputs--sort">
+              <p class="events__sort--subtitle">Sort by</p>
+              <select id="">
+                <option>newest</option>
+              </select>
+            </div>
+
+            <div class="events__inputs--show">
+              <p class="events__show--subtitle">Show</p>
+              <input type="number" placeholder="9" />
+              <span class="eventa__show--span">events per page</span>
+            </div>
+
+            <div class="events__inputs--search">
+              <input type="search" placeholder="Search event... " />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="events__inputs--grid">
+              <button class="events__grid--table">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M5 22h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2M5 4h14v7H5zm0 9h14v7H5z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="events__grid--list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M4.5 11h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5C3.67 3 3 3.67 3 4.5v5c0 .83.67 1.5 1.5 1.5M5 5h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5M19 9h-4V5h4zM4.5 21h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5m.5-6h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5m-.5 6h-4v-4h4z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="grid__list--row">
+              <div class="grid__row--date">
+                <p class="grid__date--date">05</p>
+                <span class="grid__date--span">
+                  August
+                  <span class="grid__span--time">11:00 – 14:00</span>
+                </span>
+              </div>
+              <div class="grid__row--text">
+                <div>
+                  <p class="grid__row--subtitle">
+                    Formation of the organizational structure of the company in
+                    the face of uncertainty.
+                  </p>
+                  <span class="grid__subtitle--span">Online master-class</span>
+                </div>
+              </div>
               <div>
-                <p class="grid__row--subtitle">
-                  Formation of the organizational structure of the company in the face of uncertainty.
-                </p>
-                <span class="grid__subtitle--span">Online master-class</span>
+                <button class="grid__row--btn">View more</button>
               </div>
             </div>
-            <div>
-              <button class="grid__row--btn">View more</button>
-            </div>
-      </section>
-    </main>
-  </div>
-</body>
-
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
