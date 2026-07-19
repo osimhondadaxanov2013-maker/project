@@ -229,6 +229,8 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20px;
 }
  
 .grid__list--row {
@@ -249,6 +251,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  padding-right: 40px;
 }
 
 .grid__date--date {
@@ -283,6 +286,7 @@ header {
 }
 
 .grid__subtitle--span {
+  text-align: start;
   color: #787a80;
   font-family: Lato;
   font-weight: 400;
@@ -306,6 +310,7 @@ header {
 }
 
 .grid__list--row:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   filter: drop-shadow(0 0 10px #9a9ca50a);
   background-color: #e5e8ed;
 }
