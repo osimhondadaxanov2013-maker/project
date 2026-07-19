@@ -780,3 +780,24 @@ header {
   letter-spacing: 0%;
   color: #787a80;
 }
+.center{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lines {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 60px;
+}
+.lines__box {
+  width: 30px;
+  height: 5px;
+  background-color: #b3b7bc;
+  border-radius: 5px;
+}
+.lines__box:hover {
+  background-color: #424551;
+}
