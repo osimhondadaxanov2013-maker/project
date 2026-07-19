@@ -664,3 +664,6 @@ header {
 }
 
 .students-text img{} */
+.subtitle {
+  display: none;
+}
