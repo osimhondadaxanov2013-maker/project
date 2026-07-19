@@ -232,7 +232,7 @@ header {
   gap: 30px;
   padding-bottom: 20px;
 }
- 
+
 .grid__list--row {
   width: 1200px;
   height: 126px;
@@ -249,9 +249,7 @@ header {
 .grid__row--date {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 20px;
-  padding-right: 40px;
 }
 
 .grid__date--date {
@@ -269,16 +267,20 @@ header {
   font-size: 20px;
   color: #1e212c;
 }
-
 .grid__span--time {
   color: #787a80;
   font-family: Lato;
   font-weight: 400;
   font-size: 16px;
 }
-
+.grid__row--text{
+  width: 757px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
 .grid__row--subtitle {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #1e212c;
@@ -295,8 +297,7 @@ header {
 
 .grid__row--btn {
   padding: 10px 32px;
-  border: 1px solid;
-  border: #ff3f3a 1px solid;
+  border: 1px solid #ff3f3a;
   background-color: transparent;
   color: #ff3f3a;
   cursor: pointer;
@@ -312,5 +313,4 @@ header {
 .grid__list--row:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   filter: drop-shadow(0 0 10px #9a9ca50a);
-  background-color: #e5e8ed;
 }
