@@ -600,12 +600,70 @@ header {
   font-family: "Lato", sans-serif;
 }
 
+.lessons-card p {
+  /* width: 560px;
+  height: 104px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #424551;
+  padding: 20px 1px;
+  font-family: "Lato", sans-serif; */
+  display: none;
+}
+
 .lessons-texts {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/* .students {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+}
+
+.students span {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1e212c;
+}
+
+.students h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #1e212c;
+}
+
+.students-text {
+  display: flex;
+  align-items: center;
+}
+
+.students-text p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding: 120px 120px;
+  color: #424551;
+
+}
+
+.students-text img{} */
 .subtitle {
   display: none;
 }
