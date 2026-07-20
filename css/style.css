@@ -970,7 +970,7 @@ header {
 }
 footer {
   width: 100%;
-  height: 396px;
+  height: 328px;
   background-color: #1e212c;
   padding: 80px 150px;
 }
@@ -1078,4 +1078,35 @@ li a {
   line-height: 150%;
   letter-spacing: 0%;
   color: #ffffff;
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 58px;
+  background-color: #47484c;
+  padding: 0 150px;
+}
+.footer__bottom--first {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bottom__first--icon {
+  color: #ff3f3a;
+}
+.footer__bottom--second {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #9a9ca5;
 }
