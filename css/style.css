@@ -1110,8 +1110,159 @@ li a {
   letter-spacing: 0%;
   color: #9a9ca5;
 }
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
 
+.ochil__box {
+  background: #fff;
+  width: 100%;
+  height: 583px;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 8px;
+  position: relative;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition:
+    transform 0.4s ease-out,
+    opacity 0.4s ease-out;
+}
+.ochil__box--content {
+  padding: 30px;
+}
+.modal-bg.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 
+.modal-bg.active .ochil__box {
+  transform: translateY(150px);
+  opacity: 1;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
+.ochil__box--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+.ochil__box--subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #787a80;
+  margin-bottom: 24px;
+}
+.ochil__box--label {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #424551;
+}
+.ochil__box--input {
+  margin-top: 8px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+  text-indent: 16px;
+  margin-bottom: 20px;
+}
+.ochil__box--keep {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.box__keep--check {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #424551;
+}
+.box__keep--link {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ff3f3a;
+}
+.ochil__box--btn {
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  border: none;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.sign__up {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #17696a;
+}
+.sign__up a {
+  color: #ff3f3a;
+}
+.ochil__box--bottom {
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box__bottom--icons{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.ochil__box--bottom svg {
+  color: #787a80;
+}
+.ochil__box--bottom svg:hover {
+  color: #FF3F3A;
+}
 @media screen and (max-width: 1440px) {
   header {
     padding: 20px 80px;
