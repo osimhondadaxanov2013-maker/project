@@ -225,7 +225,7 @@ header {
   font-size: 17px;
   cursor: pointer;
 }
-.grids{
+.grids {
   width: 100%;
   height: 1354px;
   padding: 0 150px;
@@ -309,4 +309,201 @@ header {
 .grid__list--row:hover {
   box-shadow: 0px 80px 80px -20px #ff3f3a29;
   transform: scale(1.05);
+}
+.miss {
+  width: 100%;
+  height: 564px;
+  background-color: #ffd8e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.miss__span {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.miss__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1e212c;
+  width: 810px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.miss__input {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.miss__input--btn {
+  padding: 15px 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border: none;
+  border-radius: 4px;
+}
+.miss__input--input {
+  height: 52px;
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+  text-indent: 16px;
+}
+footer {
+  width: 100%;
+  height: 328px;
+  background-color: #1e212c;
+  padding: 80px 150px;
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 80px;
+}
+.footer__top--first {
+  display: flex;
+  flex-direction: column;
+}
+.top__first--subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #9a9ca5;
+  width: 279px;
+  margin-top: 24px;
+  margin-bottom: 38px;
+}
+.footer__links--icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.links__icons--icon {
+  color: #9a9ca5;
+  width: 30px;
+  height: 30px;
+}
+.links__icons--icon:hover {
+  color: #fff;
+}
+.footer__top--second {
+  width: 109px;
+}
+.footer__top--second,
+footer__top--third,
+footer__top--fourth,
+footer__top--fifth,
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.footer__top--third {
+  width: 109px;
+}
+.footer__top--fourth {
+  width: 157px;
+}
+.footer__top--fifth {
+  width: 289px;
+}
+.footer__top--second,
+footer__top--third,
+footer__top--fourth,
+footer__top--fifth,
+li {
+  margin-bottom: 8px;
+}
+.footer__top--third,
+footer__top--fourth,
+footer__top--fifth,
+li a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #9a9ca5;
+  text-transform: capitalize;
+}
+.footer__top--second li {
+  margin-bottom: 8px;
+}
+.footer__top--fourth li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer__top--fifth input {
+  width: 286px;
+  height: 36px;
+  border-radius: 4px;
+  text-indent: 12px;
+  background-color: #47484c;
+  border: 1px solid #9a9ca5;
+  margin-bottom: 12px;
+}
+.footer__top--fifth p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 58px;
+  background-color: #47484c;
+  padding: 0 150px;
+}
+.footer__bottom--first {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bottom__first--icon {
+  color: #ff3f3a;
+}
+.footer__bottom--second {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #9a9ca5;
 }
