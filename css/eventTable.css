@@ -349,7 +349,7 @@ header {
   font-size: 18px;
 }
 
-#table.grids{
+.grids{
   display: flex;
   align-items: center;
   flex-wrap: wrap;

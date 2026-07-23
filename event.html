@@ -1,167 +1,139 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="shortcut icon"
-      href="data:image/png;base64,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"
-      type="image/x-icon"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CreateX</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="stylesheet" href="./css/event.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon"
+    href="data:image/png;base64,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"
+    type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreateX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <div class="container">
-      <header>
-        <nav class="header__nav">
-          <a href="./index.html">
-            <img src="./assets/logo.png" alt="" />
-          </a>
-          <ul class="nav__links">
-            <li>
-              <a class="nav__links--link" href="#">About Us</a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="./course.html">Courses</a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="./event.html">Events</a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="#">Blog</a>
-            </li>
-            <li>
-              <a class="nav__links--link" href="./contact.html">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__btns">
-          <button class="header__btns--btn">Get consultation</button>
-          <button class="btns__btn--second">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
+  <link rel="stylesheet" href="./css/event.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="header__nav">
+        <a href="./index.html">
+          <img src="./assets/logo.png" alt="" />
+        </a>
+        <ul class="nav__links">
+          <li>
+            <a class="nav__links--link" href="#">About Us</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="./course.html">Courses</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="./event.html">Events</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="nav__links--link" href="./contact.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns">
+        <button class="header__btns--btn">Get consultation</button>
+        <button class="btns__btn--second">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+            <path
+              d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1">
+            </path>
+          </svg>
+          Log in / Register
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="events">
+        <div class="events__top">
+          <span class="events__top--span">OUR EVENTS</span>
+          <h1 class="events__top--title">
+            Lectures, workshops & master-classes
+          </h1>
+        </div>
+        <div class="events__inputs">
+          <div class="events__inputs--themes">
+            <p class="events__themes--subtitle">Event category</p>
+            <select id="">
+              <option>all themes</option>
+            </select>
+          </div>
+
+          <div class="events__inputs--sort">
+            <p class="events__sort--subtitle">Sort by</p>
+            <select id="">
+              <option>newest</option>
+            </select>
+          </div>
+
+          <div class="events__inputs--show">
+            <p class="events__show--subtitle">Show</p>
+            <input type="number" placeholder="9" />
+            <span class="eventa__show--span">events per page</span>
+          </div>
+
+          <div class="events__inputs--search">
+            <input type="search" placeholder="Search event... " />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
               <path
-                d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"
-              ></path>
+                d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6">
+              </path>
             </svg>
-            Log in / Register
-          </button>
-        </div>
-      </header>
-      <main>
-        <section class="events">
-          <div class="events__top">
-            <span class="events__top--span">OUR EVENTS</span>
-            <h1 class="events__top--title">
-              Lectures, workshops & master-classes
-            </h1>
           </div>
-          <div class="events__inputs">
-            <div class="events__inputs--themes">
-              <p class="events__themes--subtitle">Event category</p>
-              <select id="">
-                <option>all themes</option>
-              </select>
-            </div>
 
-            <div class="events__inputs--sort">
-              <p class="events__sort--subtitle">Sort by</p>
-              <select id="">
-                <option>newest</option>
-              </select>
-            </div>
-
-            <div class="events__inputs--show">
-              <p class="events__show--subtitle">Show</p>
-              <input type="number" placeholder="9" />
-              <span class="eventa__show--span">events per page</span>
-            </div>
-
-            <div class="events__inputs--search">
-              <input type="search" placeholder="Search event... " />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
+          <div class="events__inputs--grid">
+            <button class="events__grid--table">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                 <path
-                  d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6"
-                ></path>
+                  d="M5 22h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2M5 4h14v7H5zm0 9h14v7H5z">
+                </path>
               </svg>
-            </div>
-
-            <div class="events__inputs--grid">
-              <button class="events__grid--table">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                  <path
-                    d="M5 22h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2M5 4h14v7H5zm0 9h14v7H5z"
-                  ></path>
-                </svg>
-              </button>
-              <button class="events__grid--list">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                  <path
-                    d="M4.5 11h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5C3.67 3 3 3.67 3 4.5v5c0 .83.67 1.5 1.5 1.5M5 5h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5M19 9h-4V5h4zM4.5 21h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5m.5-6h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5m-.5 6h-4v-4h4z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+            </button>
+            <button class="events__grid--list">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M4.5 11h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5C3.67 3 3 3.67 3 4.5v5c0 .83.67 1.5 1.5 1.5M5 5h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5M19 9h-4V5h4zM4.5 21h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5m.5-6h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5m-.5 6h-4v-4h4z">
+                </path>
+              </svg>
+            </button>
           </div>
-          <div class="grids">
-            <div class="grid__list--row">
-              <div class="grid__row--date">
-                <p class="grid__date--date">05</p>
-                <span class="grid__date--span">
-                  August
-                  <span class="grid__span--time">11:00 – 14:00</span>
-                </span>
-              </div>
-              <div  class="grid__row--text">
-                <p class="grid__row--subtitle">
-                  Formation of the organizational structure of the company in
-                  the face of uncertainty.
-                </p>
-                <span class="grid__subtitle--span">Online master-class</span>
-              </div>
-              <div class="grid__btn" id="gridBtn">
+        </div>
+        <div class="grids">
+          <div class="grid__list--row">
+            <div class="grid__row--date">
+              <p class="grid__date--date">05</p>
+              <span class="grid__date--span">
+                August
+                <span class="grid__span--time">11:00 – 14:00</span>
+              </span>
+            </div>
+            <div class="grid__row--text">
+              <p class="grid__row--subtitle">
+                Formation of the organizational structure of the company in
+                the face of uncertainty.
+              </p>
+              <span class="grid__subtitle--span">Online master-class</span>
+            </div>
+            <div class="grid__btn" id="gridBtn">
               <div>
                 <button class="grid__row--btn">View more</button>
               </div>
             </div>
-            <div class="grid__list--row">
+          </div>
+          <div class="grid__list--row">
               <div class="grid__row--date">
                 <p class="grid__date--date">24</p>
                 <span class="grid__date--span">
@@ -310,18 +282,14 @@
                 <button class="grid__row--btn">View more</button>
               </div>
             </div>
-          </div>
+            </div>
           <section class="miss">
             <span class="miss__span">Don’t miss anything</span>
             <h2 class="miss__title">
               Subscribe to the Createx School announcements
             </h2>
             <div class="miss__input">
-              <input
-                class="miss__input--input"
-                placeholder="Your working email"
-                type="text"
-              />
+              <input class="miss__input--input" placeholder="Your working email" type="text" />
               <button class="miss__input--btn">Subscribe</button>
             </div>
           </section>
@@ -343,86 +311,50 @@
                   </p>
                 </li>
                 <div class="footer__links--icons">
-                  <svg
-                    class="links__icons--icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="links__icons--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" viewBox="0 0 24 24">
                     <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                     <path
-                      d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z"
-                    ></path>
+                      d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z">
+                    </path>
                   </svg>
-                  <svg
-                    class="links__icons--icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="links__icons--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" viewBox="0 0 24 24">
                     <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                     <path
-                      d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.04 4.04 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.03 4.03 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.02 4.02 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.46 11.46 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a8 8 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8 8 0 0 0 2.319-.624 8.7 8.7 0 0 1-2.019 2.083"
-                    ></path>
+                      d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.04 4.04 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.03 4.03 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.02 4.02 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.46 11.46 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a8 8 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8 8 0 0 0 2.319-.624 8.7 8.7 0 0 1-2.019 2.083">
+                    </path>
                   </svg>
-                  <svg
-                    class="links__icons--icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="links__icons--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" viewBox="0 0 24 24">
                     <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                     <path
-                      d="M21.593 7.203a2.5 2.5 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.52 2.52 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831M9.996 15.005l.005-6 5.207 3.005z"
-                    ></path>
+                      d="M21.593 7.203a2.5 2.5 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.52 2.52 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831M9.996 15.005l.005-6 5.207 3.005z">
+                    </path>
                   </svg>
-                  <svg
-                    class="links__icons--icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="links__icons--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" viewBox="0 0 24 24">
                     <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                     <path
-                      d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"
-                    ></path>
+                      d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434">
+                    </path>
                   </svg>
-                  <svg
-                    class="links__icons--icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="links__icons--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" viewBox="0 0 24 24">
                     <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                     <path
-                      d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248m0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008m4.807-8.875a1.078 1.078 0 1 0 0 2.156 1.078 1.078 0 1 0 0-2.156"
-                    ></path>
+                      d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248m0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008m4.807-8.875a1.078 1.078 0 1 0 0 2.156 1.078 1.078 0 1 0 0-2.156">
+                    </path>
                     <path
-                      d="M20.533 6.111A4.6 4.6 0 0 0 17.9 3.479a6.6 6.6 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.6 6.6 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.6 6.6 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71s0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.6 4.6 0 0 0 2.634 2.632 6.6 6.6 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.6 6.6 0 0 0 2.186-.419 4.6 4.6 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.6 6.6 0 0 0-.421-2.217m-1.218 9.532a5 5 0 0 1-.311 1.688 3 3 0 0 1-1.712 1.711 5 5 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a5 5 0 0 1-1.669-.311 3 3 0 0 1-1.719-1.711 5.1 5.1 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654s0-2.686.053-3.655a5 5 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5 5 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a5 5 0 0 1 1.67.311 3 3 0 0 1 1.712 1.712 5.1 5.1 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655s0 2.698-.043 3.654z"
-                    ></path>
+                      d="M20.533 6.111A4.6 4.6 0 0 0 17.9 3.479a6.6 6.6 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.6 6.6 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.6 6.6 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71s0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.6 4.6 0 0 0 2.634 2.632 6.6 6.6 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.6 6.6 0 0 0 2.186-.419 4.6 4.6 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.6 6.6 0 0 0-.421-2.217m-1.218 9.532a5 5 0 0 1-.311 1.688 3 3 0 0 1-1.712 1.711 5 5 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a5 5 0 0 1-1.669-.311 3 3 0 0 1-1.719-1.711 5.1 5.1 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654s0-2.686.053-3.655a5 5 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5 5 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a5 5 0 0 1 1.67.311 3 3 0 0 1 1.712 1.712 5.1 5.1 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655s0 2.698-.043 3.654z">
+                    </path>
                   </svg>
-                  <svg
-                    class="links__icons--icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="links__icons--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" viewBox="0 0 24 24">
                     <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                     <path
-                      d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376m4.254 6.034v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z"
-                    ></path>
+                      d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376m4.254 6.034v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z">
+                    </path>
                   </svg>
                 </div>
               </ul>
@@ -465,18 +397,12 @@
               <ul class="footer__top--fourth">
                 <h3>CONTACT US</h3>
                 <li>
-                  <a href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                      viewBox="0 0 24 24">
                       <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                       <path
-                        d="M7 22h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2M7 4h10v16H7z"
-                      ></path>
+                        d="M7 22h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2M7 4h10v16H7z">
+                      </path>
                       <path d="M12 17a1 1 0 1 0 0 2 1 1 0 1 0 0-2"></path>
                     </svg>
                     (405) 555-0128
@@ -502,25 +428,20 @@
           <div class="footer__bottom">
             <p class="footer__bottom--first">
               © All rights reserved. Made withs
-              <svg
-                class="bottom__first--icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg class="bottom__first--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor" viewBox="0 0 24 24">
                 <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
                 <path
-                  d="M11.29 20.66c.2.2.45.29.71.29s.51-.1.71-.29l7.5-7.5c2.35-2.35 2.35-6.05 0-8.41-2.3-2.28-5.85-2.35-8.21-.2-2.36-2.15-5.91-2.09-8.21.2-2.35 2.36-2.35 6.06 0 8.41zM5.21 6.16C6 5.38 7 4.99 8.01 4.99s2.01.39 2.79 1.17l.5.5c.39.39 1.02.39 1.41 0l.5-.5c1.56-1.56 4.02-1.56 5.59 0 1.56 1.57 1.56 4.02 0 5.58l-6.79 6.79-6.79-6.79a3.91 3.91 0 0 1 0-5.58Z"
-                ></path>
+                  d="M11.29 20.66c.2.2.45.29.71.29s.51-.1.71-.29l7.5-7.5c2.35-2.35 2.35-6.05 0-8.41-2.3-2.28-5.85-2.35-8.21-.2-2.36-2.15-5.91-2.09-8.21.2-2.35 2.36-2.35 6.06 0 8.41zM5.21 6.16C6 5.38 7 4.99 8.01 4.99s2.01.39 2.79 1.17l.5.5c.39.39 1.02.39 1.41 0l.5-.5c1.56-1.56 4.02-1.56 5.59 0 1.56 1.57 1.56 4.02 0 5.58l-6.79 6.79-6.79-6.79a3.91 3.91 0 0 1 0-5.58Z">
+                </path>
               </svg>
               by Createx Studio
             </p>
             <p class="footer__bottom--second">GO TO TOP</p>
           </div>
-        </section>
-      </main>
-    </div>
-  </body>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>
