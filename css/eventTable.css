@@ -71,7 +71,6 @@ header {
   align-items: center;
   gap: 5px;
 }
-
 .events__top {
   padding-top: 50px;
   text-align: center;
@@ -216,6 +215,9 @@ header {
   background-color: transparent;
   font-size: 17px;
   cursor: pointer;
+}
+.events__grid--list {
+  color: #ff3f3a;
 }
 
 .events__grid--list {
