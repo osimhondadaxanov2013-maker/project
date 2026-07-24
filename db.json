@@ -131,25 +131,24 @@
       "title": "Highload Software Architecture",
       "price": "$600",
       "person": "by Brooklyn Simmons"
-    
     },
-     {
+    {
       "id": 6,
       "img": "./assets/1.jpg",
       "job": "HR & Recruting",
       "title": "Human Resources – Selection and Recruitment",
       "price": "$150",
       "person": "by Kathryn Murphy"
-    
     },
-     {
-      "id":7,
+    {
+      "id": 7,
       "img": "./assets/2.jpg",
       "job": "Design",
       "title": "User Experience. Human-centered Design",
       "price": "$240",
       "person": "by Cody Fisher"
-    
+    }
+  ],
   "teamTwo": [
     {
       "id": 1,
