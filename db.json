@@ -150,6 +150,54 @@
       "price": "$240",
       "person": "by Cody Fisher"
     
+  "teamTwo": [
+    {
+      "id": 1,
+      "name": "Dianne Russell",
+      "job": "Founder and CEO",
+      "img": "./assets/tea.png"
+    },
+    {
+      "id": 2,
+      "name": "Jerome Bell",
+      "job": "Founder and Program Director",
+      "img": "./assets/team-1.png"
+    },
+    {
+      "id": 3,
+      "name": "Kristin Watson",
+      "job": "Marketer, Curator of Marketing Course",
+      "img": "./assets/team-3.png"
+    },
+    {
+      "id": 4,
+      "name": "Marvin McKinney",
+      "job": "PM, Curator of Management Course",
+      "img": "./assets/team-04.png"
+    },
+    {
+      "id": 5,
+      "name": "Leslie Alexander Li",
+      "job": "Curator of HR & Recruting Course",
+      "img": "./assets/team-5.png"
+    },
+    {
+      "id": 6,
+      "name": "Kathryn Murphy",
+      "job": "Analyst and Marketing specialist",
+      "img": "./assets/team-6.png"
+    },
+    {
+      "id": 7,
+      "name": "Brooklyn Simmons",
+      "job": "Curator of Development Course",
+      "img": "./assets/team-7.png"
+    },
+    {
+      "id": 8,
+      "name": "Cody Fisher",
+      "job": "UX Designer, Curator of Design Course",
+      "img": "./assets/team-8.png"
     }
   ]
 }
