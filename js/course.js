@@ -9,9 +9,7 @@ plus.forEach((plyus, index) => {
       sbtl.style.display = "none";
       plyus.innerHTML = plyus.innerHTML.replace("-", "+");
     } else {
-      plyus.innerHTML = plyus.innerHTML.replace(
-        "+", "-"
-      );
+      plyus.innerHTML = plyus.innerHTML.replace("+", "-");
       sbtl.style.display = "block";
       sbtl.style.width = "560px";
       sbtl.style.height = "104px";
@@ -27,3 +25,34 @@ plus.forEach((plyus, index) => {
     }
   });
 });
+
+const API_URL = "http://localhost:3000/workers";
+
+const workerContainer = document.getElementById("worker__container");
+console.log(workerContainer);
+
+async function getWorkers() {
+  let res = await fetch(API_URL);
+  let data = await res.json();
+  console.log(data);
+
+  workerContainer.innerHTML = "";
+  data.slice(0, 2) .forEach ((worker) => {
+    workerContainer.innerHTML += `
+      <div class="worker__container--box">
+        <div class="container__box--img">
+          <img src="${worker.img}" alt="" />
+        </div>
+        <div class="container__box--text">
+          <div class="box__text--job ${worker.job === "Marketing" ? "box__text--job--marketing" : "box__text--job--other"}">${worker.job}</div>
+          <h2 class="box__text--title">${worker.title}</h2>
+          <div class="box__text--price">
+            <p class="text__price--price">${worker.price}</p>
+            <span class="text__price--who">${worker.person}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+}
+getWorkers();
