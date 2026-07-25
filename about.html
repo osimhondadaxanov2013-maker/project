@@ -9,454 +9,388 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CreaeX</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
     <div class="container">
-      <section class="hero">
-        <header>
-          <nav class="header__nav">
-            <a href="./index.html">
-              <img src="./assets/logo.png" alt="" />
-            </a>
-            <ul class="nav__links">
-              <li>
-                <a class="nav__links--link" href="./about.html">About Us</a>
-              </li>
-              <li>
-                <a class="nav__links--link" href="./course.html">Courses</a>
-              </li>
-              <li>
-                <a class="nav__links--link" href="./event.html">Events</a>
-              </li>
-              <li>
-                <a class="nav__links--link" href="#">Blog</a>
-              </li>
-              <li>
-                <a class="nav__links--link" href="./contact.html">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__btns">
-            <button class="header__btns--btn">Get consultation</button>
-            <button id="openBtn" class="btns__btn--second">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"
-                ></path>
-              </svg>
-              Log in / Register
-            </button>
-          </div>
-        </header>
-        <div id="ochil" class="modal-bg">
-          <div class="ochil__box">
-            <div class="ochil__box--content">
-              <span class="close-btn">&times;</span>
-
-              <h2 class="ochil__box--title">Sign In</h2>
-              <p class="ochil__box--subtitle">
-                Sign in to your account using email and password provided during
-                registration.
-              </p>
-              <label class="ochil__box--label">Email</label><br />
-              <input
-                class="ochil__box--input"
-                type="email"
-                placeholder="Your working email"
-              />
-              <label class="ochil__box--label">Password</label><br />
-              <input class="ochil__box--input" type="password" />
-              <div class="ochil__box--keep">
-                <div class="box__keep--check">
-                  <input type="checkbox" />
-                  Keep me signed in
-                </div>
-                <a href="#" class="box__keep--link">Forgot password?</a>
-              </div>
-              <button class="ochil__box--btn">Sign in</button>
-              <p class="sign__up">
-                Don't have an account?<a href="#"> Sign up</a>
-              </p>
-            </div>
-            <div class="ochil__box--bottom">
-              <div class="box__bottom--icons">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                  <path
-                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z"
-                  ></path>
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                  <path
-                    d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.91 8.91 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625"
-                  ></path>
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                  <path
-                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.04 4.04 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.03 4.03 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.02 4.02 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.46 11.46 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a8 8 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8 8 0 0 0 2.319-.624 8.7 8.7 0 0 1-2.019 2.083"
-                  ></path>
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                  <path
-                    d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376m4.254 6.034v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hero__text">
-          <div class="hero__text--text">
-            <div class="box">
-              <div class="hero__text--play">
-                <i class="text__play--box">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                    <path
-                      d="M6.51 18.87c.15.09.32.13.49.13s.36-.05.51-.14l10-6c.3-.18.49-.51.49-.86s-.18-.68-.49-.86l-10-6a.99.99 0 0 0-1.01-.01c-.31.18-.51.51-.51.87v12c0 .36.19.69.51.87Z"
-                    ></path>
-                  </svg>
-                </i>
-              </div>
-              <p class="box__title">Play showreel</p>
-            </div>
-            <h1 class="hero__text--title">
-              Enjoy studying with Createx Online Courses
-            </h1>
-            <div class="hero__text--btns">
-              <button class="text__btns--first">About us</button>
-              <button class="text__btns--second">Explore courses</button>
-            </div>
-          </div>
-          <div class="hero__img">
-            <img src="./assets/illustration.png" alt="" />
-          </div>
-        </div>
-        <div class="hero__bottom">
-          <div class="hero__bottom--box">
-            <h2>1200</h2>
-            <p>Students graduated</p>
-          </div>
-          <div class="hero__bottom--dots"></div>
-          <div class="hero__bottom--box">
-            <h2>84</h2>
-            <p>Completed courses</p>
-          </div>
-          <div class="hero__bottom--dots"></div>
-          <div class="hero__bottom--box">
-            <h2>16</h2>
-            <p>Qualified tutors</p>
-          </div>
-          <div class="hero__bottom--dots"></div>
-          <div class="hero__bottom--box">
-            <h2>5</h2>
-            <p>Years of experience</p>
-          </div>
-        </div>
-      </section>
-      <section class="banner">
-        <div class="banner__img">
-          <img width="605px" src="./assets/image.png" alt="" />
-        </div>
-        <div class="banner__text">
-          <span class="banner__text--span">Who we are</span>
-          <h2 class="banner__text--title">Why Createx?</h2>
-          <div class="banner__text--box">
-            <img src="./assets/check.png" alt="" />
-            <span
-              >A fermentum in morbi pretium aliquam adipiscing donec
-              tempus.</span
-            >
-          </div>
-          <div class="banner__text--box">
-            <img src="./assets/check.png" alt="" />
-            <span>Vulputate placerat amet pulvinar lorem nisl.</span>
-          </div>
-          <div class="banner__text--box">
-            <img src="./assets/check.png" alt="" />
-            <span
-              >Consequat feugiat habitant gravida quisque elit bibendum id
-              adipiscing sed.</span
-            >
-          </div>
-          <div class="banner__text--box">
-            <img src="./assets/check.png" alt="" />
-            <span>Etiam duis lobortis in fames ultrices commodo nibh.</span>
-          </div>
-          <div class="banner__text--box">
-            <img src="./assets/check.png" alt="" />
-            <span>Tincidunt sagittis neque sem ac eget.</span>
-          </div>
-          <div class="banner__text--box last">
-            <img src="./assets/check.png" alt="" />
-            <span
-              >Ultricies amet justo et eget quisque purus vulputate dapibus
-              tortor.</span
-            >
-          </div>
-          <button class="banner__text--btn">More about us</button>
-        </div>
-      </section>
-      <section class="workers">
-        <div class="workers__header">
-          <div class="workers__header--text">
-            <span>Ready to learn?</span>
-            <h2>Featured Courses</h2>
-          </div>
-          <button class="workers__header--btn">View all courses</button>
-        </div>
-        <div id="worker__container"></div>
-      </section>
-      <section class="benefit">
-        <span class="benefit__span">Our benefits</span>
-        <h1 class="benefit__title">That’s how we do it</h1>
-        <nav>
-          <ul class="benefit__links">
-            <li class="benefit__links--li">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path
-                  d="m4.83 12.49 2.04 1.83-.83 2.9-1 3.5c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02l3-2L12 18.19l2.45 1.63 3 2a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1-3.5-.83-2.9 2.04-1.83 2.5-2.25c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-3.15-.25-2.56-.2-2.47-5.46a.998.998 0 0 0-1.82 0L8.61 8.05l-2.56.2-3.15.25c-.4.03-.74.3-.87.68s-.02.8.28 1.06l2.5 2.25Zm1.39-2.25 2.52-.2.62-.05.59-.05.84-1.86 1.2-2.66 1.2 2.66.84 1.86.59.05.62.05 2.52.2.83.07-.77.69-2.5 2.25-.46.42.17.6 1.25 4.38-3.74-2.49-.55-.37-.55.37-3.74 2.49 1.25-4.38.17-.6-.46-.42L6.16 11l-.77-.69z"
-                ></path>
-              </svg>
-              Experienced Tutors
+      <header>
+        <a href="./index.html">
+          <img class="logo" src="./assets/logo.png" alt="" />
+        </a>
+        <nav class="header__nav">
+          <ul class="nav__links">
+            <li>
+              <a class="nav__links--link" href="./about.html">About Us</a>
             </li>
-            <li class="benefit__links--li">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path
-                  d="M20 8h-5.61l1.12-3.37c.2-.61.1-1.28-.27-1.8-.38-.52-.98-.83-1.62-.83h-1.61c-.3 0-.58.13-.77.36L6.54 8H4.01c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13.31a2 2 0 0 0 1.87-1.3l2.76-7.35c.04-.11.06-.23.06-.35v-2c0-1.1-.9-2-2-2ZM6 19H4v-9h2zm14-7.18L17.31 19H8V9.36L12.47 4h1.15l-1.56 4.68a1.01 1.01 0 0 0 .95 1.32h7v1.82Z"
-                ></path>
-              </svg>
-              Feedback & Support
+            <li>
+              <a class="nav__links--link" href="./course.html">Courses</a>
             </li>
-            <li class="benefit__links--li">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path
-                  d="m21.49 7.13-9-5a.99.99 0 0 0-.97 0l-9.01 5C2.19 7.31 2 7.64 2 8s.2.7.51.87l9 5c.15.08.32.13.49.13s.33-.04.49-.13l9-5c.32-.18.51-.51.51-.87s-.2-.7-.51-.87M12 11.86 5.06 8 12 4.14 18.94 8z"
-                ></path>
-                <path
-                  d="M12 18c.17 0 .33-.04.49-.13l9-5-.97-1.75-8.51 4.73-8.52-4.72-.97 1.75 9 5c.15.08.32.13.49.13Z"
-                ></path>
-                <path
-                  d="M11.51 21.87c.15.08.32.13.49.13s.33-.04.49-.13l9-5-.97-1.75-8.51 4.73-8.52-4.72-.97 1.75 9 5Z"
-                ></path>
-              </svg>
-              24/7 Online Library
+            <li>
+              <a class="nav__links--link" href="./event.html">Events</a>
             </li>
-            <li class="benefit__links--li">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path d="M18 3a3 3 0 1 0 0 6 3 3 0 1 0 0-6"></path>
-                <path
-                  d="M19.87 10.63c.08.45.13.9.13 1.37 0 4.41-3.59 8-8 8H4.91L6 18.43c.26-.37.23-.88-.06-1.22A7.98 7.98 0 0 1 4.01 12c0-4.41 3.59-8 8-8 .47 0 .92.05 1.37.13.28-.68.7-1.28 1.23-1.77-.83-.22-1.7-.36-2.6-.36C6.49 2 2 6.49 2 12c0 2.12.68 4.19 1.93 5.9l-1.75 2.53c-.21.31-.24.7-.06 1.03.17.33.51.54.89.54h9c5.51 0 10-4.49 10-10 0-.9-.13-1.77-.36-2.6-.49.53-1.09.95-1.77 1.23Z"
-                ></path>
-              </svg>
-              Community
+            <li>
+              <a class="nav__links--link" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="nav__links--link" href="./contact.html">Contacts</a>
             </li>
           </ul>
         </nav>
-        <div class="benefit__container">
-          <div class="benefit__conntainer--text">
-            <h2>Only practicing tutors</h2>
+        <div class="header__btns">
+          <button class="header__btns--btn">Get consultation</button>
+          <button id="openBtn" class="btns__btn--second">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"
+              ></path>
+            </svg>
+            Log in / Register
+          </button>
+        </div>
+        <svg
+          class="bars"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+          <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
+        </svg>
+      </header>
+      <section class="banner">
+        <div class="banner__text">
+          <span class="banner__text--span">About us</span>
+          <h1 class="banner__text--title">Createx Online School</h1>
+          <p class="banner__text--first">
+            Createx Online School is a leader in online studying. We have lots
+            of courses and programs from the main market experts.
+          </p>
+          <p class="banner__text--second">
+            We provide relevant approaches to online learning, internships and
+            employment in the largest companies in the country. Our educational
+            programs help you get a new specialty from scratch. During your
+            studies, we will help you find a job. Check the courses and online
+            events that we organise.
+          </p>
+          <div class="banner__text--btns">
+            <button class="text__btns--first">Explore events</button>
+            <button class="text__btns--second">Browse courses</button>
+          </div>
+        </div>
+        <div class="banner__img">
+          <img src="./assets/illustration (6).png" alt="" />
+        </div>
+      </section>
+      <section class="num">
+        <div class="num__img">
+          <div class="box">
+            <i class="text__play--box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M6.51 18.87c.15.09.32.13.49.13s.36-.05.51-.14l10-6c.3-.18.49-.51.49-.86s-.18-.68-.49-.86l-10-6a.99.99 0 0 0-1.01-.01c-.31.18-.51.51-.51.87v12c0 .36.19.69.51.87Z"
+                ></path>
+              </svg>
+            </i>
+            <p class="box__title">Watch Video</p>
+          </div>
+          <img width="710px" src="./assets/image (3).png" alt="" />
+        </div>
+        <div class="num__text">
+          <div class="num__text--box">
+            <h2>1200</h2>
+            <p>students graduated</p>
+          </div>
+          <div class="num__text--box">
+            <h2>84</h2>
+            <p>completed courses</p>
+          </div>
+          <div class="num__text--box">
+            <h2>16</h2>
+            <p>qualified tutors</p>
+          </div>
+          <div class="num__text--box">
+            <h2>5</h2>
+            <p>years of experience</p>
+          </div>
+        </div>
+      </section>
+      <section class="for">
+        <div class="for__header">
+          <span class="for__span">We always stand for</span>
+          <h2 class="for__title">Our core values</h2>
+        </div>
+        <div class="for__container">
+          <div class="for__container--box">
+            <img src="./assets/ic-structure.png" alt="" />
+            <h2>Structured Approach</h2>
             <p>
-              Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
-              dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
-              mollis augue. Nunc, sodales tortor sit diam mi amet massa.
-              Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
-              dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+              Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.
             </p>
           </div>
-          <div class="benefit__container--img">
-            <img src="./assets/illustration (3).png" alt="" />
+          <div class="stalba"></div>
+          <div class="for__container--box">
+            <img src="./assets/ic-chat.png" alt="" />
+            <h2>Professional Feedbacks</h2>
+            <p>Culpa nostrud commodo ea consequat reprehenderit aliquip.</p>
+          </div>
+          <div class="stalba"></div>
+          <div class="for__container--box">
+            <img src="./assets/ic-target.png" alt="" />
+            <h2>Efficiency</h2>
+            <p>
+              Viverra scelerisque consequat net. Adipisicing esse consequat.
+            </p>
+          </div>
+          <div class="stalba"></div>
+          <div class="for__container--box">
+            <img class="last" src="./assets/ic-calendar.png" alt="" />
+            <h2>Structured Approach</h2>
+            <p>
+              Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.
+            </p>
           </div>
         </div>
       </section>
-      <section class="event">
-        <span class="event__span">Our Events</span>
-        <h2 class="event__title">Lectures & workshops</h2>
-        <div class="grid">
-          <div class="grid__list--row">
-            <div class="grid__row--date">
-              <p class="grid__date--date">05</p>
-              <span class="grid__date--span">
-                August
-                <span class="grid__span--time">11:00 – 14:00</span>
-              </span>
-            </div>
-            <div class="grid__row--text">
-              <p class="grid__row--subtitle">
-                Formation of the organizational structure of the company in the
-                face of uncertainty.
-              </p>
-              <span class="grid__subtitle--span">Online master-class</span>
-            </div>
-            <div>
-              <button class="grid__row--btn">View more</button>
-            </div>
-          </div>
-          <div class="grid__list--row">
-            <div class="grid__row--date">
-              <p class="grid__date--date">24</p>
-              <span class="grid__date--span">
-                July
-                <span class="grid__span--time">11:00 – 14:00</span>
-              </span>
-            </div>
-            <div class="grid__row--text">
-              <p class="grid__row--subtitle">
-                Building a customer service department. Best Practices.
-              </p>
-              <span class="grid__subtitle--span">Onine lecture</span>
-            </div>
-            <div>
-              <button class="grid__row--btn">View more</button>
-            </div>
-          </div>
-          <div class="grid__list--row">
-            <div class="grid__row--date">
-              <p class="grid__date--date">16</p>
-              <span class="grid__date--span">
-                July
-                <span class="grid__span--time">10:00 – 13:00</span>
-              </span>
-            </div>
-            <div class="grid__row--text">
-              <p class="grid__row--subtitle">
-                How to apply methods of speculative design in practice.
-                Worldbuilding prototyping.
-              </p>
-              <span class="grid__subtitle--span">Onine workshop</span>
-            </div>
-            <div>
-              <button class="grid__row--btn">View more</button>
-            </div>
-          </div>
+      <section class="blog">
+        <div class="for__header">
+          <span class="for__span">our main directions</span>
+          <h2 class="for__title">What do we teach</h2>
         </div>
-        <div class="event__bottom">
-          <p class="event__bottom--title">Do you want more?</p>
-          <a href="./event.html"
-            ><button class="event__bottom--link">Explore all events</button></a
-          >
+        <div class="blog__container">
+          <div class="blog__container--box">
+            <div class="blog__box--img">
+              <img src="./assets/image (4).png" alt="" />
+            </div>
+            <div class="container__box--text">
+              <div class="box__text--job">Marketing</div>
+              <p class="blog__box--subtilte">
+                Odio posuere netus quisque faucibus lectus arcu donec. Eget
+                dictum eu viverra faucibus. Viverra scelerisque consequat.
+              </p>
+              <a href="#" class="blog__box--link"
+                >Check courses
+                <svg
+                  class="box__link--icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="blog__container--box">
+            <div class="blog__box--img">
+              <img src="./assets/image (5).png" alt="" />
+            </div>
+            <div class="container__box--text">
+              <div class="box__text--job second">Management</div>
+              <p class="blog__box--subtilte">
+                Odio posuere netus quisque faucibus lectus arcu donec. Eget
+                dictum eu viverra faucibus. Viverra scelerisque consequat.
+              </p>
+              <a href="#" class="blog__box--link"
+                >Check courses
+                <svg
+                  class="box__link--icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="blog__container--box">
+            <div class="blog__box--img">
+              <img src="./assets/image (6).png" alt="" />
+            </div>
+            <div class="container__box--text">
+              <div class="box__text--job third">HR & Recruting</div>
+              <p class="blog__box--subtilte">
+                Odio posuere netus quisque faucibus lectus arcu donec. Eget
+                dictum eu viverra faucibus. Viverra scelerisque consequat.
+              </p>
+              <a href="#" class="blog__box--link"
+                >Check courses
+                <svg
+                  class="box__link--icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="blog__container--box">
+            <div class="blog__box--img">
+              <img src="./assets/image (7).png" alt="" />
+            </div>
+            <div class="container__box--text">
+              <div class="box__text--job fourth">Design</div>
+              <p class="blog__box--subtilte">
+                Odio posuere netus quisque faucibus lectus arcu donec. Eget
+                dictum eu viverra faucibus. Viverra scelerisque consequat.
+              </p>
+              <a href="#" class="blog__box--link"
+                >Check courses
+                <svg
+                  class="box__link--icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="blog__container--box">
+            <div class="blog__box--img">
+              <img src="./assets/image (8).png" alt="" />
+            </div>
+            <div class="container__box--text">
+              <div class="box__text--job fifth">Development</div>
+              <p class="blog__box--subtilte">
+                Odio posuere netus quisque faucibus lectus arcu donec. Eget
+                dictum eu viverra faucibus. Viverra scelerisque consequat.
+              </p>
+              <a href="#" class="blog__box--link"
+                >Check courses
+                <svg
+                  class="box__link--icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="blog__container--box coming__soon">
+            <h2>New studying program coming soon...</h2>
+          </div>
         </div>
       </section>
-      <section class="crft">
-        <div class="crft__text">
-          <span class="crft__text--span">Createx Certificate</span>
-          <h2 class="crft__text--title">Your expertise will be confirmed</h2>
-          <p class="crft__text--subtitle">
-            We are accredited by international professional organizations and
-            institutes:
-          </p>
-          <div class="craft__text--box">
-            <img src="./assets/company.png" alt="" />
-            <img src="./assets/logo (1).png" alt="" />
-            <img src="./assets/logo (2).png" alt="" />
+      <section class="do">
+        <div class="do__text">
+          <span class="do__text--span">Studying process</span>
+          <h2 class="do__text--title">That’s how we do it</h2>
+          <div class="do__text--box">
+            <div class="text__box--side">
+              <div class="box__side--circle"></div>
+              <div class="box__side--stalba"></div>
+            </div>
+            <div class="text__box--text">
+              <span>STEP 1</span>
+              <h2>Watching online video lectures</h2>
+              <p>
+                Aliquam turpis viverra quam sit interdum blandit posuere
+                pellentesque. Nisl, imperdiet gravida massa neque.
+              </p>
+            </div>
+          </div>
+          <div class="do__text--box">
+            <div class="text__box--side">
+              <div class="box__side--circle"></div>
+              <div class="box__side--stalba"></div>
+            </div>
+            <div class="text__box--text">
+              <span>STEP 2</span>
+              <h2>Passing test</h2>
+              <p>
+                Facilisis pellentesque quis accumsan ultricies. Eu egestas eget
+                feugiat lacus, amet, sollicitudin egestas laoreet etiam.
+              </p>
+            </div>
+          </div>
+          <div class="do__text--box">
+            <div class="text__box--side">
+              <div class="box__side--circle"></div>
+              <div class="box__side--stalba"></div>
+            </div>
+            <div class="text__box--text">
+              <span>STEP 3</span>
+              <h2>Curator’s feedback</h2>
+              <p>
+                Eget amet, enim pharetra leo egestas nisi, odio imperdiet
+                facilisis. Aliquet orci varius volutpat egestas facilisi
+                lobortis.
+              </p>
+            </div>
+          </div>
+          <div class="do__text--box">
+            <div class="text__box--side">
+              <div class="box__side--circle"></div>
+              <div class="box__side--stalba"></div>
+            </div>
+            <div class="text__box--text">
+              <span>STEP 4</span>
+              <h2>Corrections if needed</h2>
+              <p>
+                Non tempor pulvinar tincidunt aliquam. Placerat ultricies
+                malesuada dui auctor.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="craft__img">
-          <img src="./assets/image (1).png" alt="" />
+        <div class="do__img">
+          <img src="./assets/illustration (5).png" alt="" />
         </div>
       </section>
       <section class="team">
         <div class="team__header">
-          <div class="team__header--text">
-            <span class="header__text--span">Best tutors are all here</span>
-            <h2 class="header__text--title">Meet our team</h2>
-          </div>
-          <div class="team__header--next">
-            <div class="header__next--box">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path d="m6 12 6 5v-4h6v-2h-6V7z"></path>
-              </svg>
-            </div>
-            <div class="header__next--box">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path d="M6 13h6v4l6-5-6-5v4H6z"></path>
-              </svg>
-            </div>
-          </div>
+          <span class="for__span">Best tutors are all here</span>
+          <h2 class="for__title">Meet our team</h2>
         </div>
         <div id="team__container"></div>
+      </section>
+      <section class="hero">
         <div class="test">
           <div class="test__center">
             <span class="test__span">TESTIMONIALS</span>
@@ -522,8 +456,15 @@
             </div>
           </div>
         </div>
+        <div class="job">
+          <div class="for__header">
+            <span class="for__span">best jobs for you</span>
+            <h2 class="for__title">Our students work here</h2>
+          </div>
+          <img src="./assets/logos.png" alt="" />
+        </div>
       </section>
-      <section class="blog">
+      <section class="blog2">
         <div class="blog__header">
           <div class="blog__header--text">
             <span class="header__text--span">Our blog</span>
@@ -531,8 +472,8 @@
           </div>
           <button class="blog__header--btn">Go to blog</button>
         </div>
-        <div class="blog__container">
-          <div class="blog__container--box">
+        <div class="blog__container2">
+          <div class="blog__container--box2">
             <div class="blog__box--img">
               <div class="box__img--what">
                 <svg
@@ -556,7 +497,7 @@
             </div>
             <div class="blog__box--time">
               <p>Marketing</p>
-              <div class="stalba"></div>
+              <div class="stalbaTwo"></div>
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -572,7 +513,7 @@
                 </svg>
                 September 4, 2020
               </p>
-              <div class="stalba"></div>
+              <div class="stalbaTwo"></div>
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -614,7 +555,7 @@
               </svg>
             </a>
           </div>
-          <div class="blog__container--box">
+          <div class="blog__container--box2">
             <div class="blog__box--img">
               <div class="box__img--what">
                 <svg
@@ -638,7 +579,7 @@
             </div>
             <div class="blog__box--time">
               <p>Management</p>
-              <div class="stalba"></div>
+              <div class="stalbaTwo"></div>
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -654,7 +595,7 @@
                 </svg>
                 August 25, 2020
               </p>
-              <div class="stalba"></div>
+              <div class="stalbaTwo"></div>
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -697,7 +638,7 @@
               </svg>
             </a>
           </div>
-          <div class="blog__container--box">
+          <div class="blog__container--box2">
             <div class="blog__box--img">
               <div class="box__img--what">
                 <svg
@@ -719,7 +660,7 @@
             </div>
             <div class="blog__box--time">
               <p>Design</p>
-              <div class="stalba"></div>
+              <div class="stalbaTwo"></div>
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -971,6 +912,7 @@
         <p class="footer__bottom--second">GO TO TOP</p>
       </div>
     </div>
-    <script src="./js/app.js"></script>
+
+    <script src="./js/about.js"></script>
   </body>
 </html>
