@@ -296,13 +296,11 @@ header {
 .info img {
   width: 16;
   height: 16;
-  opacity: 1;
 }
 
 .info span {
   width: 55;
   height: 26;
-  opacity: 1;
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
@@ -319,7 +317,6 @@ header {
 .banner-p p {
   width: 600;
   height: 156;
-  opacity: 1;
   top: 1626px;
   left: 975px;
   font-weight: 400;
@@ -546,7 +543,14 @@ header {
   flex-direction: column;
   gap: 20px;
 }
-
+.murodjon-input label {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #424551;
+}
 .murodjon-input input {
   width: 260px;
   height: 52px;
@@ -559,9 +563,6 @@ header {
 .murodjon-bottom button {
   width: 190px;
   height: 50px;
-  top: 151px;
-  left: 1002px;
-  opacity: 1;
   border-radius: 4px;
   gap: 1px;
   padding-right: 32px;
@@ -569,7 +570,8 @@ header {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
   color: white;
   margin-bottom: 10px;
-  transform: translate(-30px);
+  margin-right: 30px;
+  border: none;
 }
 
 .storage {
@@ -626,7 +628,6 @@ header {
 .storage-check-check img {
   width: 20;
   height: 20;
-  opacity: 1;
   margin-top: 6px;
   font-family: "Lato", sans-serif;
 }
@@ -649,8 +650,7 @@ header {
 }
 
 .lessons-box span {
-  width: 161;
-  height: 24;
+  width: 161px;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -661,8 +661,7 @@ header {
 }
 
 .lessons-box h1 {
-  width: 410;
-  height: 60;
+  width: 410px;
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -673,12 +672,9 @@ header {
 }
 
 .lessons-card {
-  width: 600;
-  height: 528;
   top: 3679px;
   left: 345px;
   gap: 44px;
-  opacity: 1;
   margin-bottom: 24px;
   font-family: "Lato", sans-serif;
 }
@@ -695,75 +691,31 @@ header {
 }
 
 .lessons-card p {
-  /* width: 560px;
-  height: 104px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  letter-spacing: 0%;
-  color: #424551;
-  padding: 20px 1px;
-  font-family: "Lato", sans-serif; */
   display: none;
 }
 
 .lessons-texts {
   display: flex;
-  align-items: center;
-  gap: 10px;
 }
-
-/* .students {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Lato", sans-serif;
+.lessons-texts h3 {
+  display: block;
 }
-
-.students span {
+.title {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #1e212c;
-}
-
-.students h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 46px;
-  line-height: 130%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #1e212c;
-}
-
-.students-text {
-  display: flex;
-  align-items: center;
-}
-
-.students-text p {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
   letter-spacing: 0%;
-  padding: 120px 120px;
-  color: #424551;
-
+  margin-right: 50px;
+  display: block;
+  color: #1e212c;
 }
-
-.students-text img{} */
 .subtitle {
   display: none;
 }
 .two {
   width: 100%;
-  height: 1446px;
+  height: 1546px;
   background-color: #f4f5f6;
   padding: 80px 150px;
 }
@@ -775,11 +727,8 @@ header {
 }
 
 .imput-img {
-  width: 550;
-  height: 502;
-  top: 5157px;
-  left: 345px;
-  opacity: 1;
+  width: 550px;
+  height: 502px;
 }
 
 .imput-input {
@@ -827,7 +776,6 @@ header {
   width: 495;
   height: 52;
   top: 34px;
-  opacity: 1;
   border-radius: 4px;
   border: 1px solid #d7dadd;
   padding-left: 10px;
@@ -1087,14 +1035,22 @@ header {
   font-weight: 700;
   font-size: 28px;
   line-height: 150%;
-  letter-spacing: 0%
+  letter-spacing: 0%;
 }
-
+.header__text--next{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .workerr button {
   width: 262px;
   height: 52px;
-  opacity: 1;
-  
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  letter-spacing: 0.5px;
   border-radius: 4px;
   padding-right: 40px;
   padding-left: 40px;
@@ -1252,7 +1208,6 @@ li a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 9999;
-  opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
@@ -1266,7 +1221,6 @@ li a {
   border-radius: 8px;
   position: relative;
   transform: translateY(-100px);
-  opacity: 0;
   transition:
     transform 0.4s ease-out,
     opacity 0.4s ease-out;
@@ -1275,13 +1229,11 @@ li a {
   padding: 30px;
 }
 .modal-bg.active {
-  opacity: 1;
   pointer-events: auto;
 }
 
 .modal-bg.active .ochil__box {
   transform: translateY(150px);
-  opacity: 1;
 }
 
 .close-btn {
