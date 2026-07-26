@@ -1470,7 +1470,168 @@ li a {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 400px) {
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .container,
+  .container-cart {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  header {
+    padding: 15px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header__nav,
+  .nav__links,
+  .header__btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  main {
+    margin: 40px 15px;
+    text-align: center;
+  }
+
+  main h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  main p {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .course-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .course-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .search {
+    width: 100%;
+    margin: 0;
+  }
+
+  #course-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 40px auto;
+    padding: 0;
+  }
+
+  .course-card {
+    width: 100%;
+  }
+
+  .course-image {
+    height: 220px;
+  }
+
+  .course-image img {
+    width: 180px;
+  }
+
+  #team__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .test {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .test__title {
+    font-size: 28px;
+  }
+
+  .test__box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .next__box--container {
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    height: auto;
+  }
+
+  .box__container--flex {
+    flex-direction: column;
+  }
+
+  .crft {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .crft__text--title {
+    font-size: 28px;
+  }
+
+  .craft__img img {
+    width: 100%;
+  }
+
+  .miss {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .miss__title {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .miss__input {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .miss__input input,
+  .miss__input button {
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+}
 
 
 
