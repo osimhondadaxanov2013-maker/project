@@ -7,11 +7,11 @@
   text-decoration: none;
   list-style: none;
 }
-/* .containerr {
+.mr {
   width: 100%;
   max-width: 1540px;
   margin: 0 auto;
-} */
+}
 /* .content {
   width: 100%;
   height: 468px;
@@ -112,14 +112,13 @@ header {
 .mr-texts {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 12px;
 }
 
 .mr-texts h2 {
   width: 62;
   height: 46;
   gap: 10px;
-  opacity: 1;
   border-width: 1px;
   border-radius: 4px;
   padding-top: 10px;
@@ -132,25 +131,26 @@ header {
 
 .box__img--whatt {
   /* position: absolute; */
-  width: 85px;
-  height: 30px;
+  padding: 10px 20px;
   /* background-color: #fff; */
   border-radius: 4px;
   margin-left: 12px;
   /* margin-top: 12px; */
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 4px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  color: #424551;
   color: #9a9ca5;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
 }
-
+.box__img--whatt:hover {
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  color: #ff3f3a;
+}
 .boxs-lefts {
   display: flex;
   align-items: center;
@@ -176,7 +176,6 @@ header {
 .mr-left select {
   width: 160px;
   height: 44px;
-  opacity: 1;
   border-width: 1px;
   border-radius: 4px;
   border: 1px solid #d7dadd;
@@ -188,7 +187,6 @@ header {
   height: 74px; */
   top: 304px;
   left: 1290px;
-  opacity: 1;
   border-width: 1px;
   border-radius: 4px;
   border: 1px solid #d7dadd;
@@ -366,7 +364,6 @@ header {
 .btnn input {
   width: 422px;
   height: 52px;
-  opacity: 1;
   border-width: 1px;
   border-radius: 4px;
   border: 1px solid #d7dadd;
@@ -378,7 +375,6 @@ header {
   height: 52px;
   left: 446px;
   gap: 10px;
-  opacity: 1;
   border-radius: 4px;
   padding-right: 40px;
   padding-left: 40px;
@@ -543,7 +539,6 @@ li a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 9999;
-  opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
@@ -557,7 +552,6 @@ li a {
   border-radius: 8px;
   position: relative;
   transform: translateY(-100px);
-  opacity: 0;
   transition:
     transform 0.4s ease-out,
     opacity 0.4s ease-out;
@@ -566,13 +560,11 @@ li a {
   padding: 30px;
 }
 .modal-bg.active {
-  opacity: 1;
   pointer-events: auto;
 }
 
 .modal-bg.active .ochil__box {
   transform: translateY(150px);
-  opacity: 1;
 }
 
 .close-btn {
