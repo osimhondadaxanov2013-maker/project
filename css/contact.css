@@ -70,106 +70,120 @@ header {
   gap: 6px;
 }
 
-main{
+main {
   margin-left: 550px;
   margin-top: 120px;
 }
-main p{
+main p {
   font-size: 30px;
   padding-left: 80px;
 }
 
-main h1{
+main h1 {
   font-size: 45px;
   width: 500px;
   font-family: sans-serif;
   padding-top: 20px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, sans-serif;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.container-cart{
-    width: 1230px;
-    margin: 0 auto;
+.container-cart {
+  width: 1230px;
+  margin: 0 auto;
 }
 
-.course-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 0;
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
 }
 
-.course-menu{
-    display: flex;
-    align-items: center;
-    gap: 34px;
-    list-style: none;
+.course-menu {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  list-style: none;
 }
 
-.course-menu li{
-    color: #9a9a9a;
-    font-size: 20px;
-    cursor: pointer;
-    transition: .3s;
+.course-menu li {
+  color: #9a9a9a;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.course-menu li sup{
-    font-size: 14px;
-    vertical-align: super;
+.course-menu li sup {
+  font-size: 14px;
+  vertical-align: super;
+}
+.active {
+  height: 46px;
+  width: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.second {
+  width: 125px;
+}
+.third {
+  width: 145px;
+}
+.fourth {
+  width: 161px;
+}
+.fivth{
+  width: 100px;
+}
+.sixth{
+  width: 147px;
+}
+.course-menu .active:hover {
+  color: #ff5a3c;
+  border: 1px solid #ff5a3c;
 }
 
-.course-menu .active:hover{
-    color: #ff5a3c;
-    border: 1px solid #ff5a3c;
-    border-radius: 4px;
-    padding: 9px 14px;
+.course-menu li:hover {
+  color: #ff5a3c;
 }
 
-.course-menu li:hover{
-    color: #ff5a3c;
-}
-
-.btnm:hover{
+.btnm:hover {
   border: 2px solid #ff3f3a;
-
 }
 
-.search{
-    width: 300px;
-    height: 36px;
-    border: 1px solid #e5e5e5;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 12px;
-    margin-left: 60px;
+.search {
+  width: 300px;
+  height: 36px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-left: 60px;
 }
 
-.search input{
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 12px;
+.search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 12px;
 }
 
-.search i{
-    color: #bdbdbd;
-    font-size: 12px;
-} 
-
-
-
-
-
+.search i {
+  color: #bdbdbd;
+  font-size: 12px;
+}
 
 #course-container {
   width: 1230px;
@@ -380,7 +394,6 @@ body{
   letter-spacing: 0%;
   color: #1e212c;
   margin-bottom: 4px;
-
 }
 .profile__text--job {
   font-family: "Lato", sans-serif;
@@ -803,7 +816,7 @@ li a {
   align-items: center;
   justify-content: center;
 }
-.box__bottom--icons{
+.box__bottom--icons {
   display: flex;
   align-items: center;
   gap: 13px;
@@ -812,7 +825,7 @@ li a {
   color: #787a80;
 }
 .ochil__box--bottom svg:hover {
-  color: #FF3F3A;
+  color: #ff3f3a;
 }
 @media screen and (max-width: 1440px) {
   header {
@@ -1471,7 +1484,6 @@ li a {
   }
 }
 @media screen and (max-width: 400px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -1632,6 +1644,3 @@ li a {
     padding: 20px;
   }
 }
-
-
-
