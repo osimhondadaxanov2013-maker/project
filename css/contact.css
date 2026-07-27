@@ -1526,7 +1526,9 @@ li a {
     width: 100%;
     margin: 0;
   }
-
+  .color {
+    color: #9a9ca5;
+  }
   #course-container {
     width: 100%;
     grid-template-columns: 1fr;
