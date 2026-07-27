@@ -224,12 +224,12 @@ header {
   font-size: 17px;
   cursor: pointer;
 }
-.grids {
+#list.grids {
   width: 100%;
   height: 1354px;
   padding: 0 150px;
 }
-.grid__list--row {
+#box.list {
   width: 1200px;
   height: 126px;
   display: flex;
@@ -275,6 +275,7 @@ header {
   text-align: start;
   display: flex;
   flex-direction: column;
+  margin-left: 30px;
 }
 
 .grid__row--subtitle {
@@ -507,4 +508,15 @@ li a {
   line-height: 150%;
   letter-spacing: 0%;
   color: #9a9ca5;
+}
+
+#box.grids{
+  width: 390px;
+  height: 323px;
+
+}
+
+#list.grids{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
