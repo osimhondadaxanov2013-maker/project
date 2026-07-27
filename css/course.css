@@ -1037,7 +1037,7 @@ header {
   line-height: 150%;
   letter-spacing: 0%;
 }
-.header__text--next{
+.header__text--next {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1348,4 +1348,468 @@ li a {
 }
 .ochil__box--bottom svg:hover {
   color: #ff3f3a;
+}
+
+@media (max-width: 768px) {
+  .containerr {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .content {
+    height: auto;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  header {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .header__nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .header__nav img {
+    height: 28px;
+    width: auto;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .header__btns {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .header__btns--btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    flex: 1;
+  }
+
+  .btns__btn--second {
+    font-size: 13px;
+    flex-wrap: nowrap;
+  }
+
+  .content__text {
+    padding: 40px 16px;
+  }
+
+  .content__text h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .content__text h1 {
+    width: 100%;
+    font-size: 26px;
+    line-height: 125%;
+  }
+
+  .nail {
+    display: none;
+  }
+
+  .radius {
+    display: none;
+  }
+
+  .hero {
+    padding: 50px 20px;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .text h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .text h2 {
+    font-size: 20px;
+  }
+
+  .item {
+    width: 100%;
+    height: auto;
+  }
+
+  .item h2 {
+    font-size: 14px;
+  }
+
+  .first {
+    margin-top: 16px;
+  }
+
+  .hero__text {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+    height: auto;
+    padding: 24px 20px;
+  }
+
+  .style {
+    margin-bottom: 20px;
+  }
+
+  .style h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 13px 0;
+    text-align: center;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .banner-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-right {
+    width: 100%;
+  }
+
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+  }
+
+  .banner-info {
+    gap: 8px;
+  }
+
+  .banner-p p {
+    width: 100%;
+  }
+
+  .banner-icon {
+    width: auto;
+  }
+
+  .dots {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .dots-text h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .dots-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .dots-1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .dots-2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .dots-1 p {
+    text-align: center;
+  }
+
+  .dots-2 p {
+    text-align: center;
+  }
+
+  .murodjon {
+    padding: 40px 16px;
+  }
+
+  .murodjon-box {
+    width: 100%;
+    padding: 24px 20px;
+  }
+
+  .murodjon-top {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .murodjon-top h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .murodjon-time {
+    gap: 12px;
+  }
+
+  .murodjon-time h3 {
+    font-size: 22px;
+  }
+
+  .murodjon-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .murodjon-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .murodjon-input input {
+    width: 100%;
+  }
+
+  .murodjon-bottom button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .storage {
+    flex-direction: column;
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  .storage-card h1 {
+    font-size: 26px;
+  }
+
+  .storage-check-check p {
+    font-size: 15px;
+  }
+
+  .storage-check-check p br {
+    display: none;
+  }
+
+  .lessons {
+    flex-direction: column;
+    padding: 50px 15px;
+    gap: 30px;
+  }
+
+  .lessons-box h1 {
+    width: 100%;
+    font-size: 26px;
+  }
+
+  .lessons-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .two {
+    height: auto;
+    padding: 40px 16px;
+  }
+
+  .imput {
+    flex-direction: column;
+  }
+
+  .imput-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .imput-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .imput-input {
+    padding: 30px 0;
+    width: 100%;
+  }
+
+  .imput-input h1 {
+    font-size: 24px;
+  }
+
+  .imput-text input {
+    width: 100%;
+    padding: 10px 12px;
+  }
+
+  .imput-input button {
+    width: 100%;
+    padding: 13px 0;
+  }
+
+  .test {
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .test__title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .test__box {
+    gap: 12px;
+  }
+
+  .header__next--box {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header__next--box svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .next__box--container {
+    width: 100%;
+    height: auto;
+    padding: 24px 20px;
+  }
+
+  .box__container--flex {
+    gap: 16px;
+  }
+
+  .box__container--flex img {
+    width: 20px;
+    height: auto;
+  }
+
+  .container__flex--subtitle {
+    font-size: 15px;
+  }
+
+  .workers {
+    height: auto;
+    padding: 0 16px 60px;
+  }
+
+  .workers__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .workers__header--text h2 {
+    font-size: 27px;
+  }
+
+  .workers__header--btn {
+    padding: 12px 24px;
+  }
+
+  #worker__container {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 24px;
+  }
+
+  .worker__container--box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .worker__container--box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .workerr {
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .workerr h1 {
+    font-size: 20px;
+  }
+
+  .workerr button {
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .top__first--subtitle {
+    width: 100%;
+  }
+
+  .footer__top--fifth {
+    width: 100%;
+  }
+
+  .footer__bottom--second {
+    width: 100%;
+  }
+
+  .footer__top--fourth {
+    width: 100%;
+  }
+
+  .footer__top--third {
+    width: 100%;
+  }
+
+  .footer__top--fifth input {
+    width: 100%;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 20px;
+    gap: 8px;
+    text-align: center;
+  }
 }
