@@ -78,7 +78,7 @@
   "workerTwo": [
     {
       "id": 1,
-      "img": "./assets/worker-1.png",
+      "img": "./assets/second.jpg",
       "job": "Marketing",
       "title": "The Ultimate Google Ads Training Course",
       "price": "$100",
@@ -86,7 +86,7 @@
     },
     {
       "id": 2,
-      "img": "./assets/worker-2.png",
+      "img": "./assets/third.jpg",
       "job": "Management",
       "title": "Prduct Management Fundamentals",
       "price": "$480",
@@ -94,7 +94,7 @@
     },
     {
       "id": 3,
-      "img": "./assets/worker-3.png",
+      "img": "./assets/fourth.jpg",
       "job": "HR & Recruting",
       "title": "HR  Management and Analytics",
       "price": "$200",
@@ -102,7 +102,7 @@
     },
     {
       "id": 4,
-      "img": "./assets/worker-4.png",
+      "img": "./assets/fifth.jpg",
       "job": "Marketing",
       "title": "Brand Management & PR Communications",
       "price": "$530",
@@ -110,7 +110,7 @@
     },
     {
       "id": 5,
-      "img": "./assets/worker-5.png",
+      "img": "./assets/sixth.jpg",
       "job": "Management",
       "title": "Business Development Management",
       "price": "$400",
@@ -118,7 +118,7 @@
     },
     {
       "id": 6,
-      "img": "./assets/worker-6.png",
+      "img": "./assets/seenth.jpg",
       "job": "Design",
       "title": "Graphic Design Basic",
       "price": "$500",
@@ -126,7 +126,7 @@
     },
     {
       "id": 5,
-      "img": "./assets/qora.png",
+      "img": "./assets/workerTwo .png",
       "job": "Development",
       "title": "Highload Software Architecture",
       "price": "$600",
@@ -134,7 +134,7 @@
     },
     {
       "id": 6,
-      "img": "./assets/1.jpg",
+      "img": "./assets/eight.jpg",
       "job": "HR & Recruting",
       "title": "Human Resources – Selection and Recruitment",
       "price": "$150",
@@ -142,7 +142,7 @@
     },
     {
       "id": 7,
-      "img": "./assets/2.jpg",
+      "img": "./assets/last.jpg",
       "job": "Design",
       "title": "User Experience. Human-centered Design",
       "price": "$240",
@@ -199,9 +199,4 @@
       "img": "./assets/team-8.png"
     }
   ]
-
 }
-
-
-
-
