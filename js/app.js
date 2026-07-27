@@ -56,17 +56,14 @@ const openBtn = document.getElementById("openBtn");
 const modalBg = document.getElementById("ochil");
 const closeBtn = document.querySelector(".close-btn");
 
-// Tepadagi tugma bosilganda oynani ochish
 openBtn.addEventListener("click", () => {
   modalBg.classList.add("active");
 });
 
-// X tugmasi bosilganda oynani yopish
 closeBtn.addEventListener("click", () => {
   modalBg.classList.remove("active");
 });
 
-// Oynadan tashqaridagi bo'sh joy bosilganda ham yopish
 window.addEventListener("click", (e) => {
   if (e.target === modalBg) {
     modalBg.classList.remove("active");
