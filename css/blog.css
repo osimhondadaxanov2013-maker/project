@@ -114,7 +114,7 @@ ul {
 .checkbox-label input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  accent-color: #ff5a60; /* Rasmga mos qizil/pusk rang */
+  accent-color: #ff5a60; 
   cursor: pointer;
 }
 
@@ -287,7 +287,9 @@ blockquote {
 
 .trend h5 {
   font-size: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
+  width: 219px;
+  padding-top: 4px;
 }
 
 .trend small {
@@ -401,12 +403,14 @@ blockquote {
   padding: 20px 20px 10px;
   font-size: 20px;
   line-height: 30px;
+  width: 460px;
 }
 
 .card p {
   padding: 0 20px;
   color: #787a80;
   line-height: 26px;
+  width: 460px;
 }
 
 .card a {
